@@ -11,7 +11,6 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { useAuth } from "../context/AuthContextProvider";
 
 const Auth = () => {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -131,6 +130,7 @@ const Auth = () => {
         </Box>
       </Box>
     </Container>
+
   );
 };
 

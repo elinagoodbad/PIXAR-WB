@@ -1,4 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
+
+import fire from "../fire";
+import { set } from "firebase/database";
+import { useNavigate } from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
 import fire from "../fire";
 
@@ -21,7 +26,8 @@ const AuthContextProvider = ({ children }) => {
     setEmailError("");
     setPasswordError("");
   };
-  // !REGISTER
+
+
   const handleRegister = () => {
     fire
       .auth()
@@ -42,7 +48,7 @@ const AuthContextProvider = ({ children }) => {
     clearInputs();
     clearErrors();
   };
-  //   !LOGIN
+
   const handleLogin = () => {
     fire
       .auth()
@@ -65,7 +71,7 @@ const AuthContextProvider = ({ children }) => {
     clearInputs();
     clearErrors();
   };
-  //   ! LogOut
+
   const handleLogOut = () => {
     fire.auth().signOut();
   };
@@ -88,6 +94,7 @@ const AuthContextProvider = ({ children }) => {
     passwordError,
     setEmail,
     setPassword,
+
     setPasswordError,
     user,
     setUser,
@@ -95,8 +102,7 @@ const AuthContextProvider = ({ children }) => {
     handleLogin,
     handleLogOut,
     authListener,
-    setHasAccount,
-    hasAccount,
+
   };
   return <authContext.Provider value={values}>{children}</authContext.Provider>;
 };
