@@ -1,10 +1,4 @@
-import React, { useState } from "react";
-import "./NewMovie.css";
-import Deteil from "../products/Deteil";
-import PaginationControlled from "../products/Pagination";
-import { Link } from "react-router-dom";
-
-const moviesData = [
+export const moviesData = [
   {
     title: "The Color Purple",
     image:
@@ -13,6 +7,20 @@ const moviesData = [
     description: "Own it Today",
     genre: "Drama",
     rating: "7.8",
+    about:
+      "Academy Award winner Whoopi Goldberg, Danny Glover and Oprah Winfrey star in director Steven Spielberg's adaptation of Alice Walker's Pulitzer Prize-winning novel The Color Purple. From 1909 to 1949, Celie (Goldberg--Ghosts of Mississippi), a Southern Black woman, gradually gains self-respect as she strives to educate herself and to find love--despite an abusive spouse and a society biased against her race and her sex.​",
+  },
+  {
+    title: "King Richard",
+    image:
+      "https://play-lh.googleusercontent.com/Yb7tOfPd4FuvBq_Lu3xzFKi9S0bsTtSvtlkF1HzIBgCDMvFJUHfA8gpgmCtncydFitneoebMPNI8hvkNO4A",
+    year: "2021",
+    description: "Own Now. Watch Instantly",
+    genre: "Biography, Drama, Sports Theme",
+    rating: "7.8",
+    about:
+      "Based on the true story that will inspire the world, Warner Bros. Pictures’ “King Richard follows the journey of Richard Williams, an undeterred father instrumental in raising two of the most extraordinarily gifted athletes of all time, who will end up changing the sport of tennis forever. Two-time Oscar nominee Will Smith (“Ali,” “The Pursuit of Happyness,” “Bad Boys for Life”) stars as Richard, under the direction of Reinaldo Marcus Green (“Monsters and Men”).",
+    price: "3,4$",
   },
   {
     title: "Just Mercy",
@@ -22,6 +30,9 @@ const moviesData = [
     description: "Own it Today",
     genre: "Drama",
     rating: "7.6",
+    about:
+      "A powerful and thought-provoking true story, “Just Mercy” follows young lawyer Bryan Stevenson (Jordan) and his history-making battle for justice. After graduating from Harvard, Bryan had his pick of lucrative jobs. Instead, he heads to Alabama to defend those wrongly condemned or who were not afforded proper representation, with the support of local advocate Eva Ansley (Larson). One of his first, and most incendiary, cases is that of Walter McMillian (Foxx), who, in 1987, was sentenced to die for the notorious murder of an 18-year-old girl, despite a preponderance of evidence proving his innocence and the fact that the only testimony against him came from a criminal with a motive to lie. In the years that follow, Bryan becomes embroiled in a labyrinth of legal and political maneuverings and overt and unabashed racism as he fights for Walter, and others like him, with the odds—and the system—stacked against them.",
+    price: "3,7$",
   },
   {
     title: "42",
@@ -30,6 +41,9 @@ const moviesData = [
     description: "Own it Today",
     genre: "Biography",
     rating: "7.5",
+    about:
+      "Hero is a word we often hear in the world of sports, but heroism is not always about achievements on the field of play. 42 tells the story of two men -- the great Jackie Robinson (Chadwick Boseman) and the legendary Brooklyn Dodgers manager Branch Rickey (Harrison Ford) -- whose brave stand against prejudice forever changed the world by changing the game of baseball. In 1946, Rickey signed Robinson to the team, breaking Major League Baseball's infamous color line. Facing racism from every side, Robinson demonstrated tremendous courage by letting his talent on the field do the talking -- ultimately winning over fans and his teammates, and paving the way for others to follow.",
+    price: "3,1$",
   },
   {
     title: "The Little Things",
@@ -39,6 +53,9 @@ const moviesData = [
     description: "Own it Today",
     genre: "Crime",
     rating: "6.3",
+    about:
+      "Kern County Deputy Sheriff Joe “Deke” Deacon (Washington) is sent to Los Angeles for what should have been a quick evidence‐gathering assignment. Instead, he becomes embroiled in the search for a serial killer who is terrorizing the city. Leading the hunt, L.A. Sheriff Department Sergeant JimBaxter (Malik), impressed with Deke’s cop instincts, unofficially engages his help. But as they track the killer, Baxter is unaware that the investigation is dredging up echoes of Deke’s past, uncovering disturbing secrets that could threaten more than his case.",
+    price: "3,4$",
   },
   {
     title: "Roots: The Complete",
@@ -48,6 +65,9 @@ const moviesData = [
     description: "Own it Today",
     genre: "Drama",
     rating: "8.4",
+    about:
+      "His name was Kunta Kinte. Kidnapped from Africa and enslaved in America in 1767, he refused to accept his slave name of Toby. Heirs kept his heroic defiance alive, whispering the name of Kunta Kinte from one generation to the next until it reached a young boy growing up in Tennessee. His name was Alex Haley. And he proclaimed Kunta Kinte's name to the world.",
+    price: "3$",
   },
   {
     title: "Friday",
@@ -57,6 +77,9 @@ const moviesData = [
     description: "Own it Today",
     genre: "Comedy",
     rating: "7.3",
+    about:
+      " A lot can happen between Thursday and Saturday... Before the sun sets, Craig must get his friend out of trouble, find a new job so his parents don't evict him, escape his girlfriend long enough to capture a new woman's heart and survive a climatic confrontation with the neighborhood menace.",
+    price: "3,1$",
   },
   {
     title: "All American: Season 1",
@@ -65,6 +88,9 @@ const moviesData = [
     description: "Own it Today",
     genre: "Drama",
     rating: "7.6",
+    about:
+      " Spencer James is a rising high school football player and A student at South Crenshaw High. Compton is the place he calls home. But when Beverly High School’s football coach Billy Baker recruits him to join his team in Beverly Hills, Spencer’s mother, Grace, and his best friend, Coop, convince Spencer it’s an opportunity he has to seize. Now Spencer must navigate two worlds, the south side neighborhood that he knows and the affluent Beverly Hills world that has offered him an opportunity for something bigger. When Spencer is forced to move in with Billy and his family to protect his transfer permit to Beverly, Billy’s son, Jordan (the team’s starting quarterback), is less than thrilled to be sharing his father’s attention — or the team spotlight — with Spencer. While Spencer struggles to find his footing, he makes an unlikely friend in Jordan’s sister, Olivia, who is dealing with her own demons. He also quickly develops a crush on his classmate, Layla, something her boyfriend, Asher, quickly realizes — and so, he sets out to drive Spencer off the football team and out of Beverly Hills for good. Inspired by the life of NFL player Spencer Paysinger.",
+    price: "3,5$",
   },
   {
     title: "All American: Season 2",
@@ -73,6 +99,9 @@ const moviesData = [
     description: "Available on Digital Now",
     genre: "Drama",
     rating: "7.6",
+    about:
+      "Rising high school football player Spencer James went from an A student at South Crenshaw High in Compton to Beverly High School’s football team when coach Billy Baker recruited him to play for his own team in Beverly Hills. In season one, we saw Spencer navigate two worlds and struggle to find his footing. He discovered family secrets along the way, made unlikely friendships, and had some of his closest relationships tested.",
+    price: "3,5$",
   },
   {
     title: "All American: Season 3",
@@ -82,6 +111,9 @@ const moviesData = [
     description: "Available on Digital Now",
     genre: "Drama",
     rating: "7.6",
+    about:
+      "At the end of season two, Spencer (Daniel Ezra) decides to return to South Crenshaw High for his senior year with Billy Baker (Taye Diggs) by his side as the new head coach. Together, their plan is to bring home a football championship to save the school. However, in season three that may prove difficult as the high stakes of the Beverly/Crenshaw rivalry become very personal now that it's friend versus friend, and father versus son. Furthermore, the medical mystery surrounding Spencer's injured arm will not only significantly affect his game on the field, but also his relationships off the field too, as they all try to navigate a very complicated, secret-filled senior year at both Beverly and South Crenshaw.",
+    price: "3,5$",
   },
   {
     title: "All American: Season 4",
@@ -91,6 +123,9 @@ const moviesData = [
     description: "Available on Digital Now",
     genre: "Drama",
     rating: "7.6",
+    about:
+      "It’s been a long journey for high school football star Spencer James (Daniel Ezra), from his days as the breakout player at South Crenshaw High to becoming state champion with Beverly Hills High. His family life, personal relationships and athletic future all grew in ways he never imagined. But after the rough year that followed that victory, Spencer made the tough decision to return to South Crenshaw High for his senior year with Billy Baker (Taye Diggs) as the new head coach. With South Crenshaw High saved and the State Championship behind him, Spencer has his eyes set on the All American game and his future with the NFL which starts with Toledo State. But before our Beverly and South Crenshaw students can set their sights on college, they’ll have to navigate the last half of senior year, including prom, two graduations, and the growing pains of leaving high school behind and catapulting into adulthood.",
+    price: "3,5$",
   },
   {
     title: "All American: Season 5",
@@ -100,6 +135,9 @@ const moviesData = [
     description: "Watch on The CW and Netflix",
     genre: "Drama",
     rating: "7.6",
+    about:
+      "Season five finds Spencer and his friends thriving as young adults on the cusp of real adulthood. The season launches with the GAU Condors at a bowl game during the winter break, but Spencer hardly has time to focus on the achievement while the juicy scandal Olivia discovered at the end of last season, and the fragile state of their relationship, looms over his head. Olivia’s investigation into Coach Garrett and the GAU football team will have bigger repercussions than she imagined and will affect more people than expected. Meanwhile in South Crenshaw, Billy focuses on his high school students and players while struggling with missing coaching Spencer and Jordan. Grace prepares for a new chapter in her life which includes an epic wedding to D’Angelo Carter Laura teams up with Coop, who has a new interest in law, leading her down a path she wasn’t expecting. Jordan will embark on a quest to woo Layla, while Layla and Patience get serious about their careers. Asher is thriving with Jaymee and focused on coaching while JJ discovers just how fun the off season can be for an athlete. But even when life gets difficult for our crew, they will always find a way to rise from the ashes.",
+    price: "3,5$",
   },
   {
     title: "Judas and the Black Messiah",
@@ -109,6 +147,9 @@ const moviesData = [
     description: "Own it Today",
     genre: "Biography",
     rating: "7.5",
+    about:
+      "FBI informant William O'Neal infiltrates the Illinois Black Panther Party and is tasked with keeping tabs on their charismatic leader, Chairman Fred Hampton. A career thief, O'Neal revels in the danger of manipulating both his comrades and his handler, Special Agent Roy Mitchell. Hampton's political prowess grows just as he's falling in love with fellow revolutionary Deborah Johnson. Meanwhile, a battle wages for O'Neal's soul. Will he align with the forces of good? Or subdue Hampton and The Panthers by any means, as FBI Director J. Edgar Hoover commands?",
+    price: "2,9$",
   },
   {
     title: "All American: Homecoming",
@@ -118,6 +159,9 @@ const moviesData = [
     description: "Own it Today",
     genre: "Drama",
     rating: "7.6",
+    about:
+      "ALL AMERICAN: HOMECOMING is a young adult sports drama set against the backdrop of the HBCU (Historically Black Colleges and Universities) experience. From the executive producers of ALL AMERICAN, the show follows a young tennis hopeful from Beverly Hills and an elite baseball player from Chicago as they contend with the high stakes of college sports, while also navigating the highs, lows, and sexiness of unsupervised early adulthood at a prestigious HBCU.",
+    price: "3,2$",
   },
   {
     title: "All Of Us",
@@ -127,7 +171,11 @@ const moviesData = [
     description: "Own it Today",
     genre: "Comedy",
     rating: "6.8",
+    about:
+      "Inspired by the domestic lives of celebrities Jada Pinkett Smith and Will Smith, the family comedy 'All of' Us reflects a new generation's enlightened attitude towards those who juggle ex-spouses, dating and professional lives",
+    price: "3$",
   },
+  //!!!
   {
     title: "Abbott Elementary: Season 1",
     image:
@@ -389,91 +437,3 @@ const moviesData = [
     rating: "7.7",
   },
 ];
-
-const NewMovie = () => {
-  const [selectedMovie, setSelectedMovie] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const moviesPerPage = 18;
-  const totalPages = Math.ceil(moviesData.length / moviesPerPage);
-  const startIndex = (currentPage - 1) * moviesPerPage;
-  const currentMovies = moviesData.slice(
-    startIndex,
-    startIndex + moviesPerPage
-  );
-
-  const handleOpenModal = (movie) => {
-    setSelectedMovie(movie);
-  };
-
-  const handleCloseModal = () => {
-    setSelectedMovie(null);
-  };
-
-  return (
-    <div className="movie-page-container">
-      <div className="hero-banner">
-        {/* <img
-          src="https://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/key_art/hero.jpg"
-          alt="Hero Banner"
-        /> */}
-        <div className="hero-text">
-          <h1>Welcome to Warner Bros.</h1>
-          <p>Your favorite movies and TV shows all in one place.</p>
-        </div>
-      </div>
-      <div className="hero-text2">
-        <h1> |COMING SOON TO THEATERS</h1>
-      </div>
-      <div className="movie-card-container">
-        {currentMovies.map((movie, index) => (
-          <div className="movie-card" key={index}>
-            <div
-              className="movie-card-inner"
-              // onClick={() => handleOpenModal(movie)}
-            >
-              {/* <img
-                src={movie.image}
-                alt={movie.title}
-                className="movie-image"
-                onClick={() => handleOpenModal(movie)}
-              /> */}
-              <Link to={`/movie/${movie.title}`}>
-                <img
-                  src={movie.image}
-                  alt={movie.title}
-                  className="movie-image"
-                />
-              </Link>
-              <div className="movie-info">
-                <h2 className="movie-title">{movie.title}</h2>
-                <span>{movie.year}</span>
-                <p className="movie-description">{movie.description}</p>
-                <button
-                  className="details-button"
-                  onClick={() => handleOpenModal(movie)}
-                >
-                  Details
-                </button>
-              </div>
-            </div>
-          </div>
-        ))}
-
-        {selectedMovie && (
-          <Deteil movie={selectedMovie} handleCloseModal={handleCloseModal} />
-        )}
-
-        <div className="pagination-position">
-          {" "}
-          <PaginationControlled
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={setCurrentPage}
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default NewMovie;
