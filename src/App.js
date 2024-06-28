@@ -1,11 +1,16 @@
 import React from "react";
-import HomePage from "./pages/HomePage";
-
+import MainRoutes from "./routes/MainRoutes";
+import Navbar from "./components/homePage/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
-  return <div>
-    <HomePage/>
-  </div>;
-}
+  return (
+    <div>
+      <Navbar />
+      <MainRoutes />
+    </div>
+  );
+};
+
 
 export default App;

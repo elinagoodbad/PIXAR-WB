@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -11,10 +12,6 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-footer *{
-    color: white;
 }
 
 .container{
@@ -49,7 +46,7 @@ p.phone{
     width: 70px;
     height: 3px;
     position: relative;
-    background-color: white;
+    background-color: "white";
     margin-top: 5px;
     margin-bottom: 20px;
     border-radius: 3px;
@@ -109,7 +106,7 @@ p.phone{
 
 .footer-col .social-icons i{
     padding: 30px;
-    background-color: white;
+    background-color: "white";
     color: #00093c;
     border-radius: 30%;
     margin: 5px;
@@ -118,3 +115,6 @@ p.phone{
 .footer-para{
     max-width: 250px;
 }
+
+
+
