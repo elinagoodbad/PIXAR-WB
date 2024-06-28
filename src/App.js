@@ -1,13 +1,14 @@
 import React from "react";
+import MainRoutes from "./routes/MainRoutes";
 import Navbar from "./components/homePage/Navbar";
-import { Router } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
-    // <Router>
-
-    // </Router>
-    <Navbar />
+    <div>
+      <Navbar />
+      <MainRoutes />
+    </div>
   );
 };
 
