@@ -9,7 +9,7 @@
   margin-top: 60px;
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
   padding: 20px;
 }
 
-.banner .movie-title {
+.movie-title {
   color: white;
   font-size: 2.5em;
   margin: 0;
@@ -120,7 +120,6 @@ hr {
 }
 
 .more-pictures-grid {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Change to 4 columns */
   gap: 10px;
