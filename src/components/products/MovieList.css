@@ -1,0 +1,16 @@
+.movie-list-container {
+  padding: 20px;
+}
+
+.movie-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pagination-position {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

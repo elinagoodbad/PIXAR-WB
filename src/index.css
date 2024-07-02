@@ -11,10 +11,10 @@ body {
   text-decoration: none;
 }
 
-footer {
+/* footer {
   background-color: white;
   border-top-left-radius: 0px;
-  /* position: sticky; */
+
   bottom: 0;
   width: 100%;
 }
@@ -121,4 +121,4 @@ p.phone {
 
 .footer-para {
   max-width: 250px;
-}
+} */

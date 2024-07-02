@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 .movie-page-container {
   display: flex;
@@ -14,8 +14,8 @@
 .movie-card {
   margin-top: 100px;
   flex: 0 0 22%;
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   border: none;
 }
 
@@ -64,4 +64,4 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
+} */

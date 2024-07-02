@@ -1,12 +1,60 @@
 {
-  "movies": [],
+  "movies": [
+    {
+      "title": "DUNE: PART TWO",
+      "description": "The saga continues as award-winning filmmaker Denis Villeneuve embarks on “Dune: Part Two,” the next chapter of Frank Herbert’s celebrated novel Dune, with an expanded all-star international ensemble cast. The film, from Warner Bros. Pictures and Legendary Pictures, is the highly anticipated follow-up to 2021’s six-time Academy Award-winning “Dune.” ",
+      "image": "https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/dune2_keyart_0.jpg",
+      "genre": "Action/Adventure, Drama",
+      "year": 2024,
+      "rating": "9.7",
+      "bannerImage": "https://media.cinemacloud.co.uk/imageFilm/1725_1_2.jpg",
+      "price": 3.5,
+      "pic1": "https://uznayvse.ru/images/content/2021/6/uzn_16246104095.jpg",
+      "pic2": "https://248006.selcdn.ru/main/iblock/6c0/6c025a974b0338d2694e8812d9c0dee1/d5d8bae8d8722524a4b19e100232f906.png",
+      "pic3": "https://www.kino-teatr.ru/art/7215/114713.jpg",
+      "pic4": "https://pentanglearts.org/wp-content/uploads/2024/02/Dune-Banner.jpg",
+      "pic5": "https://images.squarespace-cdn.com/content/v1/59e512ddf43b55c29c71b996/984abba8-d184-409c-bdff-5d130025f088/dune_2021_2.jpeg",
+      "pic6": "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/05/22/43/75/36/c37869740cd7.jpg",
+      "pic7": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2024/03/dune-part-2.jpeg",
+      "pic8": "https://media.revistagq.com/photos/60faa6d464ee72f23c7a85f4/master/pass/dune-trailer-estreno-espan%CC%83a.jpeg",
+      "trailer1Image": "https://s0.rbk.ru/v6_top_pics/media/img/1/76/346880560625761.webp",
+      "trailer1Link": "https://youtu.be/n9xhJrPXop4",
+      "trailer2Image": "https://assets.telegraphindia.com/telegraph/2023/Jun/1688111171_dune-part-two-trailer.jpg",
+      "trailer2Link": "https://youtu.be/_YUzQa_1RCE",
+      "category": "Movies",
+      "id": 1
+    },
+    {
+      "title": "s",
+      "description": "The saga continues as award-winning filmmaker Denis Villeneuve embarks on “Dune: Part Two,” the next chapter of Frank Herbert’s celebrated novel Dune, with an expanded all-star international ensemble cast. The film, from Warner Bros. Pictures and Legendary Pictures, is the highly anticipated follow-up to 2021’s six-time Academy Award-winning “Dune.” ",
+      "image": "s",
+      "genre": "Action/Adventure, Drama",
+      "year": 1,
+      "rating": "9.7",
+      "bannerImage": "https://media.cinemacloud.co.uk/imageFilm/1725_1_2.jpg",
+      "price": 81.97,
+      "pic1": "https://uznayvse.ru/images/content/2021/6/uzn_16246104095.jpg",
+      "pic2": "https://248006.selcdn.ru/main/iblock/6c0/6c025a974b0338d2694e8812d9c0dee1/d5d8bae8d8722524a4b19e100232f906.png",
+      "pic3": "https://www.kino-teatr.ru/art/7215/114713.jpg",
+      "pic4": "https://pentanglearts.org/wp-content/uploads/2024/02/Dune-Banner.jpg",
+      "pic5": "https://images.squarespace-cdn.com/content/v1/59e512ddf43b55c29c71b996/984abba8-d184-409c-bdff-5d130025f088/dune_2021_2.jpeg",
+      "pic6": "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/05/22/43/75/36/c37869740cd7.jpg",
+      "pic7": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2024/03/dune-part-2.jpeg",
+      "pic8": "https://media.revistagq.com/photos/60faa6d464ee72f23c7a85f4/master/pass/dune-trailer-estreno-espan%CC%83a.jpeg",
+      "trailer1Image": "https://s0.rbk.ru/v6_top_pics/media/img/1/76/346880560625761.webp",
+      "trailer1Link": "https://youtu.be/n9xhJrPXop4",
+      "trailer2Image": "https://assets.telegraphindia.com/telegraph/2023/Jun/1688111171_dune-part-two-trailer.jpg",
+      "trailer2Link": "https://youtu.be/_YUzQa_1RCE",
+      "category": "Movies",
+      "id": 2
+    }
+  ],
   "cartoons": [
     {
       "title": "Inside Out 2",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1718150290005-E300DD1Q2FX7UPXGQFKS/io2.jpg?format=500w",
       "year": "2024",
       "description": "Disney and Pixar’s “Inside Out 2” returns to the mind of newly minted teenager Riley just as headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone. Maya Hawke lends her voice to Anxiety, alongside Amy Poehler as Joy, Phyllis Smith as Sadness, Lewis Black as Anger, Tony Hale as Fear, and Liza Lapira as Disgust. Directed by Kelsey Mann and produced by Mark Nielsen, “Inside Out 2” releases only in theaters Summer 2024.",
-
       "rating": "9.8",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1718134852414-YSI3E3JSZW1D05E2KBXB/i170_26jT_pub.pub16.230.jpg?format=2500w​",
       "price": "3.5$",
@@ -22,14 +70,15 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/8778e997-7779-4ea4-b7c0-8764a49acb57/io2_OTT.jpg?format=1500w",
       "trailer": "https://youtu.be/LEjhY15eCx0",
       "trailer2": "https://youtu.be/VWavstJydZU",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "category": "Movies",
+      "id": 1
     },
     {
       "title": "Elemental",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1677261445468-VNTJ4L41VES1YMLW5R9G/elemental.jpg?format=500w",
       "year": "2023",
       "description": "Set in Element City, where Fire-, Water-, Earth- and Air-residents live together, Elemental introduces Ember, a tough, quick-witted and fiery young woman, whose friendship with a fun, sappy, go-with-the-flow guy named Wade challenges her beliefs about the world they live in.",
-
       "rating": "8.8",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1685573029468-8YZID2NMMLICHS87B0BB/m551_11_pub.pub16.158.jpg?format=2500w​",
       "price": "3.0$",
@@ -43,14 +92,15 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/86569c82-4d5a-446c-8e87-93474d584cc8/OTT.jpg?format=1500w",
       "trailer": "https://youtu.be/hXzcyx9V0xw",
       "trailer2": "https://youtu.be/-cT495xKvvs",
-      "genre": "cartoon"
+      "genre": "cartoon",
+
+      "id": 2
     },
     {
       "title": "Turning Red",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1646783025567-U2DAROT5EEX7BXEKZDRS/red.jpg?format=500w",
       "year": "2022",
       "description": "Disney and Pixar’s “Turning Red” introduces Mei Lee, a confident, dorky 13-year-old torn between staying her mother’s dutiful daughter and the chaos of adolescence. Her protective, if not slightly overbearing mother, Ming, is never far from her daughter—an unfortunate reality for the teenager. And as if changes to her interests, relationships and body weren’t enough, whenever she gets too excited (which is practically ALWAYS), she “poofs” into a giant red panda!",
-
       "rating": "8.7",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1644952417247-RNCRTITDFTZIMB8N8JL9/char_head.jpg?format=2500w​",
       "price": "2.9$",
@@ -66,14 +116,14 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1626187872354-26FINZGEZRZJWM2BPMTP/tr_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/XdKzUbAiswE",
       "trailer2": "https://youtu.be/pqdHP2dWQ9M",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 3
     },
     {
       "title": "Luca",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1623690039982-E63Y1YB8S91Z3BX6P2MF/luca_poster.jpg?format=500w",
       "year": "2021",
       "description": "Set in a beautiful seaside town on the Italian Riviera, Disney and Pixar’s original feature film “Luca” is a coming-of-age story about one young boy experiencing an unforgettable summer filled with gelato, pasta and endless scooter rides. Luca shares these adventures with his newfound best friend, but all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water’s surface.",
-
       "rating": "8.9",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1623260517416-EG16JX1HZ6MNEJUNJ6OJ/luca_char_head.jpg?format=2500w​",
       "price": "3.1$",
@@ -89,14 +139,14 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617732089707-PU9X3MFAK5U9AUYFLMRU/luca_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/mYfJxlgR2jw",
       "trailer2": "https://youtu.be/YdAIBlPVe9s",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 4
     },
     {
       "title": "Soul",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1608898616194-WHEDXKLZNGL9PSGXT1E5/soul_poster.jpg?format=500w",
       "year": "2020",
       "description": "What is it that makes you...YOU? “Soul” introduces Joe Gardner (voice of Jamie Foxx) – a middle-school band teacher who has a passion for jazz. “Joe wants more than anything to become a professional jazz pianist,” says director Pete Docter. “So when he’s offered a rare, once-in-a-lifetime opportunity to play with one of the greats, Joe feels he’s reached the top of the ultimate mountain.” But one small misstep takes him from the streets of New York City to The Great Before – a fantastical place where new souls get their personalities, quirks and interests before they go to Earth. According to Docter, the idea for this unique world was 23 years in the making. “It started with my son—he’s 23 now—but the instant he was born, he already had a personality,” says Docter. “Where did that come from? I thought your personality developed through your interaction with the world. And yet, it was pretty clear that we’re all born with a very unique, specific sense of who we are.",
-
       "rating": "8.8",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1606835162257-9UA2VIH7M2HON1XAPP35/soul_char.jpg?format=2500w",
       "price": "2.5$",
@@ -112,14 +162,14 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617730979562-F6KG3YX14HULOBYHQCP7/soul_ot1.jpg?format=2500w",
       "trailer": "https://youtu.be/Gs--6c7Hn_A",
       "trailer2": "https://youtu.be/xOsLIiBStEs",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 5
     },
     {
       "title": "Onward",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1583509959252-CIL09QTUVPXKDD17YZ5S/1051083-onwardianbarley-1280.jpg?format=500w",
       "year": "2020",
       "description": "Set in a suburban fantasy world, Disney and Pixar’s “Onward” introduces two teenage elf brothers who embark on an extraordinary quest to discover if there is still a little magic left out there. “The story is inspired by my own relationship with my brother and our connection with our dad who passed away when I was about a year old,” says director Dan Scanlon. “He’s always been a mystery to us. A family member sent us a tape recording of him saying just two words: ‘hello’ and ‘goodbye.’ Two words. But to my brother and me—it was magic.“That was the jumping-off point,” continues Scanlon. “We’ve all lost someone, and if we could spend one more day with them—what an exciting opportunity that would be. We knew that if we wanted to tell that story that we’d have to set the movie in a world where you could have that incredible opportunity.”",
-
       "rating": "9.5",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1580344082540-UBJFWOJXFY2B0LHUY8JC/onw_character.jpg?format=2500w",
       "price": "3.5$",
@@ -135,14 +185,15 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617732851099-TLBKNXZVK72PGCQKLPMH/onward_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/gn5QmllRCn4",
       "trailer2": "https://youtu.be/x8DKg_fsacM",
-      "genre": "cartoon"
+      "genre": "cartoon",
+
+      "id": 6
     },
     {
       "title": "Toy Story 4",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1553023192073-OCDPCL7P9TCZA60UJVEQ/payoff.jpg?format=500w",
       "year": "2019",
       "description": "Woody has always been confident about his place in the world and that his priority is taking care of his kid, whether that’s Andy or Bonnie. But when Bonnie adds a reluctant new toy called “Forky” to her room, a road trip adventure alongside old and new friends will show Woody how big the world can be for a toy. ",
-
       "rating": "7.7",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1559172373913-9USVFZI8X90IV3GIH88E/credits.jpg?format=2500w",
       "price": "2.4$",
@@ -158,14 +209,15 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617735020414-E2MVTPL4R8OADSKUHGJT/ts4_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/wmiIUN-7qhE",
       "trailer2": "https://youtu.be/LDXYRzerjzU",
-      "genre": "cartoon"
+      "genre": "cartoon",
+
+      "id": 7
     },
     {
       "title": "Incredibles 2",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1520447607721-OKIOWUX7XXGYYA36NUEV/i2_tease.png?format=500w",
       "year": "2018",
       "description": "Everyone’s favorite family of superheroes is back in “Incredibles 2” – but this time Helen (voice of Holly Hunter) is in the spotlight, leaving Bob (voice of Craig T. Nelson) at home with Violet (voice of Sarah Vowell) and Dash (voice of Huck Milner) to navigate the day-to-day heroics of “normal” life. It’s a tough transition for everyone, made tougher by the fact that the family is still unaware of baby Jack-Jack’s emerging superpowers. When a new villain hatches a brilliant and dangerous plot, the family and Frozone (voice of Samuel L. Jackson) must find a way to work together again—which is easier said than done, even when they’re all Incredible.",
-
       "rating": "9.0",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1528130246623-42ERZ641G34IW01D4KZ7/w3.jpg?format=2500w",
       "price": "2.6$",
@@ -181,14 +233,14 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617745434263-2FV0OD7OU5FQNUR28ATE/i2_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/YBpdL9hSac4",
       "trailer2": "https://youtu.be/ZJDMWVZta3M",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 8
     },
     {
       "title": "Coco",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1506962163502-F5JTYXKPKB17E7DIJPZ7/coco_poster.jpg?format=500w",
       "year": "2017",
       "description": "Inhabiting the Land of the Dead is a rich and vibrant community. But these characters had to be built without many of the usual traits because they are all skeletons. “We had to figure out how to give them personality without skin, muscles, noses or even lips,” says character art director Daniel Arriaga. “We played with shapes and did a lot of paintings. We sculpted and studied skulls from every angle to figure out where we could add appeal and charm.”",
-
       "rating": "9.9",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1526399226524-80INDMVR64XIFNXNM5LC/char.jpg?format=2500w",
       "price": "5.5$",
@@ -204,14 +256,14 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617746542240-XLRMWI1OQCB1EZ8MPR1O/coco_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/xlnPHQ3TLX8",
       "trailer2": "https://youtu.be/zNCz4mQzfEI",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 9
     },
     {
       "title": "Finding Dory",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1470688221955-X5LCNYJ18HE0EMUXGATC/dory.jpg?format=500w",
       "year": "2016",
       "description": "Forgetful blue tang Dory is living happily in the reef with Marlin and Nemo. When Dory suddenly remembers that she has a family out there who may be looking for her, the trio takes off on a life-changing adventure across the ocean to California’s prestigious Marine Life Institute, a rehabilitation center and aquarium. In an effort to find her mom and dad, Dory enlists the help of three of the MLI’s most intriguing residents: Hank, a cantankerous 'septopus' who frequently gives employees the slip; Bailey, a beluga whale who is convinced his biological sonar skills are on the fritz; and Destiny, a nearsighted whale shark. Deftly navigating the complex inner workings of the MLI, Dory and her friends discover the magic within their flaws, friendships and family.",
-
       "rating": "7.8",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1540511236320-41698GJD811GXE9S9BY7/fd_character_head.jpg?format=2500w",
       "price": "2.8$",
@@ -227,14 +279,14 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617747675184-6Y4U1EP3UH7NM3KPJGXD/finding_dory_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/JhvrQeY3doI",
       "trailer2": "https://youtu.be/iG0P6bjyUNI",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 10
     },
     {
       "title": "The Good Dinosaur",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1470687895719-PHTR43KVL0GJO5WTBSQL/16_dino.jpg?format=500w",
       "year": "2015",
       "description": "The Good Dinosaur asks the question: What if the asteroid that forever changed life on Earth missed the planet completely and giant dinosaurs never became extinct? Pixar takes you on an epic journey into the world of dinosaurs where an Apatosaurus named Arlo makes an unlikely human friend. While traveling through a harsh and mysterious landscape, Arlo learns the power of confronting his fears and discovers what he is truly capable of.",
-
       "rating": "8.9",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1540568723143-BX88NGFLOECM0ML60AND/dino.jpg?format=2500w",
       "price": "2.6$",
@@ -250,14 +302,14 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617817918965-8DN242USBTOJ6LQGC67D/dino_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/O-RgquKVTPE",
       "trailer2": "https://youtu.be/8lsIrASLD-Q",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 11
     },
     {
       "title": "Monsters University",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1484180875972-E3ISSQGWXXSQJZ86VR3E/14_MU_stroke.jpg?format=500w",
       "year": "2013",
       "description": "We all know Mike Wazowski and James P. Sullivan to be an inseparable pair, but that wasn’t always the case. From the moment these two mismatched monsters met they couldn't stand each other. Monsters University unlocks the door to how Mike and Sulley overcame their differences and became the best of friends.",
-
       "rating": "9.4",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1540573258476-G4WE46B0GAQHFXP6464D/awards_head.jpg?format=2500w",
       "price": "3.3$",
@@ -273,14 +325,14 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1617822326420-ODFUVJFIJZC0GMR6ULFB/mu_ott.jpg?format=2500w",
       "trailer": "https://youtu.be/5fkQArST1Yo",
       "trailer2": "https://youtu.be/TmTmOHW3mvA",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 12
     },
     {
       "title": "Cars",
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1470687893917-MI0TBYIZM3E601MSIJGF/07_cars.jpg?format=500w",
       "year": "2006",
       "description": "Aspiring champion race car Lightning McQueen is on the fast track to success, fame, and everything he's ever hoped for—until he takes an unexpected detour on dusty Route 66. His have-it-all-now attitude is thrown into a tailspin when a small-town community that time forgot shows McQueen what he's been missing in his high-octane life.",
-
       "rating": "9.8",
       "bannerImg": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1540581866617-NQE9PTPUVUHM0Y87HAS7/character-head.jpg?format=2500w",
       "price": "3.8$",
@@ -296,8 +348,22 @@
       "trailer2Img": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1618602582185-1DSQX831XHGJPCWD7RL3/cars_66.jpg?format=1500w",
       "trailer": "https://youtu.be/zGac-ocbayk",
       "trailer2": "https://youtu.be/QOHsabCBjxo",
-      "genre": "cartoon"
+      "genre": "cartoon",
+      "id": 13
     }
   ],
-  "categories": []
+  "categories": [
+    {
+      "name": "movies",
+      "id": 1
+    },
+    {
+      "name": "cartoons",
+      "id": 2
+    },
+    {
+      "name": "dddd",
+      "id": 3
+    }
+  ]
 }
