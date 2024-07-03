@@ -99,7 +99,7 @@ import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import "./Footer.css";
+import "./Footer.modal.css";
 
 const Footer = () => {
   return (

@@ -5,7 +5,7 @@ import React from "react";
 // import img3 from "../homePage/assets/joker_folie_a_deux_hero.jpg";
 // import img4 from "../homePage/assets/furiosa_hero_2.jpg";
 import img5 from "../homePage/assets/warnebros.jpg";
-import "./HeaderHomePage.css";
+import "./HeaderHomePage.modal.css";
 
 const HeaderHomePage = () => {
   return (

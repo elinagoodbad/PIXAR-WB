@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./NewMovie.css";
+import "./NewMovie.modal.css";
 import Deteil from "../products/Deteil";
 import PaginationControlled from "../products/Pagination";
 import { Link } from "react-router-dom";

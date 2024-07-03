@@ -645,7 +645,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SellIcon from "@mui/icons-material/Sell";
 import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
 import DeleteIcon from "@mui/icons-material/Delete";
-import "./Deteil.css";
+import "./Deteil.modal.css";
 import { blue } from "@mui/material/colors";
 import { useCart } from "../../context/CartContextProvider";
 
@@ -793,7 +793,7 @@ const Deteil = ({ movie, handleCloseModal }) => {
           <img src={movie.image} alt={movie.title} className="modal-image" />
           <div className="movie-details">
             <h2>{movie.title}</h2>
-            <p>{movie.description}</p>
+            {/* <p>{movie.description}</p> */}
             <div className="icons">
               {isFavoriteMark ? (
                 <FavoriteIcon
@@ -801,6 +801,18 @@ const Deteil = ({ movie, handleCloseModal }) => {
                   onClick={handleFavorite}
                 />
               ) : (
+                // <p
+                //   onClick={handleFavorite}
+                //   style={{ fontSize: "60px", marginLeft: "10px" }}
+                // >
+                //   ❤️
+                // </p>
+                // <p
+                //   onClick={handleFavorite}
+                //   style={{ fontSize: "60px", marginLeft: "10px" }}
+                // >
+                //   🤍
+                // </p>
                 <FavoriteBorderIcon
                   sx={{ color: "#d50000" }}
                   onClick={handleFavorite}
@@ -812,11 +824,33 @@ const Deteil = ({ movie, handleCloseModal }) => {
                   onClick={toggleBookmark}
                 />
               ) : (
+                // <p
+                //   onClick={toggleBookmark}
+                //   style={{ fontSize: "60px", marginLeft: "10px" }}
+                // >
+                //   ⭐️
+                // </p>
+                // <p
+                //   onClick={toggleBookmark}
+                //   style={{
+                //     fontSize: "60px",
+                //     marginLeft: "10px",
+                //     marginBottom: "10px",
+                //   }}
+                // >
+                //   ☆
+                // </p>
                 <BookmarkBorderIcon
                   sx={{ color: "#ffd600" }}
                   onClick={toggleBookmark}
                 />
               )}
+              {/* <p
+                onClick={openCommentModal}
+                style={{ fontSize: "60px", marginLeft: "10px" }}
+              >
+                💬
+              </p> */}
               <ModeCommentOutlinedIcon
                 sx={{ color: "#2979ff" }}
                 className="comment-icon"
@@ -833,16 +867,24 @@ const Deteil = ({ movie, handleCloseModal }) => {
               <strong>Rating:</strong> {movie.rating}
             </p>
             <p>
-              <strong>Price:</strong> {movie.price}
+              <strong>Price:</strong> {movie.price}$
             </p>
             <button
               className="buy-button"
               onClick={handleAddToCart}
               disabled={isInCart}
             >
-              <SellIcon /> <br />
+              {/* <SellIcon />  */}
+              <p style={{ fontSize: "20px", marginLeft: "10px" }}>💸</p>
+
               {isInCart ? "In Cart" : "Buy Now"}
             </button>
+
+            <div className="movie-trailer-detail">
+              <a href={movie.trailer}>
+                <img src={movie.trailer1Img} />
+              </a>
+            </div>
           </div>
         </div>
         {isCommentModalOpen && (
@@ -862,10 +904,16 @@ const Deteil = ({ movie, handleCloseModal }) => {
                 {comments.map((comment, index) => (
                   <div key={index} className="comment-item">
                     <strong>{comment.username}:</strong> {comment.text}
-                    <DeleteIcon
+                    {/* <DeleteIcon
                       className="delete-icon"
                       onClick={() => deleteComment(index)}
-                    />
+                    /> */}
+                    <p
+                      onClick={() => deleteComment(index)}
+                      style={{ fontSize: "20px", marginLeft: "10px" }}
+                    >
+                      🗑️
+                    </p>
                   </div>
                 ))}
               </div>

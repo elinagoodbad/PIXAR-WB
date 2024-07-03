@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./MovieDetailPage.css";
+import "./MovieDetailPage.modal.css";
 
 const MovieDetailPage = () => {
   const { title } = useParams();
@@ -32,7 +32,7 @@ const MovieDetailPage = () => {
 
   return (
     <div className="movie-detail-page">
-      <div className="banner">
+      <div className="banner-detail-page">
         <img src={movie.bannerImg} alt={movie.title} className="banner-image" />
         <div className="banner-overlay">
           <h1 className="movie-title"> {movie.title}</h1>
@@ -69,7 +69,7 @@ const MovieDetailPage = () => {
             <strong>Rating:</strong> {movie.rating}
           </p>
           <p>
-            <strong>Price:</strong> {movie.price}
+            <strong>Price:</strong> {movie.price}$
           </p>
         </div>
       </div>

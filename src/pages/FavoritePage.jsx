@@ -1,7 +1,7 @@
 // src/pages/FavoritePage.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./FavoritePage.css";
+import "./FavoritePage.modal.css";
 
 const FavoritePage = () => {
   const [favoriteMovies, setFavoriteMovies] = useState([]);

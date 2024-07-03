@@ -380,34 +380,322 @@
 
 // export default Navbar;
 //!?(((((((((((((((((((((((((())))))))))))))))))))))))))
-import React, { useState, useEffect } from "react";
+//! готовое рабочее
+// import React, { useState, useEffect } from "react";
+// import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
+// import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+// import SearchIcon from "@mui/icons-material/Search";
+// import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+// import PersonIcon from "@mui/icons-material/Person";
+// import FavoriteIcon from "@mui/icons-material/Favorite";
+// import TurnedInIcon from "@mui/icons-material/TurnedIn";
+// import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
+// import { Link } from "react-router-dom";
+// import "./Navbar.modal.css";
+// import { useCart } from "../../context/CartContextProvider";
+// import { Badge } from "@mui/material";
+// import { getProductsCountInCart } from "../../helpers/function";
+// import { useAuth } from "../../context/AuthContextProvider";
+// import { ADMIN } from "../../helpers/const";
+// import { MenuItem, Typography } from "@mui/material";
+// import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+// import { pink } from "@mui/material/colors";
+
+// const Navbar = () => {
+//   const [searchVisible, setSearchVisible] = useState(false);
+//   const { cart } = useCart();
+//   const { user, handleLogOut } = useAuth();
+//   const cartCount = (cart.cartoons || []).length + (cart.movies || []).length;
+
+//   const toggleSearch = () => {
+//     setSearchVisible(!searchVisible);
+//   };
+
+//   return (
+//     <nav className="navbar">
+//       <div className="navbar-container">
+//         <Link to="/" className="navbar-logo">
+//           <img
+//             src="https://static-prod.adweek.com/wp-content/uploads/2019/11/new-warner-bros-logo-transformation-content-2019.gif"
+//             alt="Warner Bros Logo"
+//           />
+//         </Link>
+
+//         <ul className="navbar-menu">
+//           <li>
+//             {/* <LocalMoviesIcon /> */}
+//             <p style={{ fontSize: "20px" }}>🎥</p>
+//             <Link to="/movies">Movies</Link>
+//           </li>
+//           <li>
+//             {/* <LocalMoviesIcon /> */}
+//             <p style={{ fontSize: "20px" }}>👼🏻</p>
+//             <Link to="/cartoons">Cartoons</Link>
+//           </li>
+
+//           <li>
+//             {/* <FavoriteIcon /> */}
+//             <p style={{ fontSize: "20px" }}>💗</p>
+//             <Link to="/liked">Liked</Link>
+//           </li>
+//           <li>
+//             {/* <TurnedInIcon /> */}
+//             <p style={{ fontSize: "20px" }}>⭐️</p>
+//             <Link to="/favorites">Favorites</Link>
+//           </li>
+//           {/* <Link to="/cart">
+// //               <Badge badgeContent={cartCount} color="primary">
+// //                 <ShoppingCartIcon />
+// //                 <StorefrontOutlinedIcon />
+// //                 <p style={{ fontSize: "20px" }}>🛒</p>
+// //               </Badge>
+// //               <span>Shop</span>
+// //             </Link> */}
+//           <li>
+//             <Link to="/cart">
+//               <Badge badgeContent={cartCount} color="primary">
+//                 {/* <ShoppingCartIcon sx={{ color: "white" }} /> */}
+//                 <p style={{ fontSize: "20px" }}>🛒</p>
+//               </Badge>
+//               <span>Shop</span>
+//             </Link>
+//           </li>
+//           {user?.email === ADMIN ? (
+//             <li>
+//               {/* <PersonIcon /> */}
+//               <p style={{ fontSize: "20px" }}>🙆🏻</p>
+//               <Link to="/admin">ADMIN</Link>
+//             </li>
+//           ) : null}
+//           {/* {user.email ? (
+//             <MenuItem onClick={() => handleLogOut()}>
+//               <Typography sx={{ color: "white" }}>LogOut</Typography>
+//             </MenuItem>
+//           ) : (
+//             <Link to={"/auth"}>
+//               <MenuItem>
+//                 <Typography sx={{ color: "white" }}>Register</Typography>
+//               </MenuItem>
+//             </Link>
+//           )} */}
+//         </ul>
+
+//         <div className="search-box">
+//           {searchVisible && (
+//             <input
+//               type="text"
+//               className="search-input"
+//               placeholder="Search for movies, series, cartoons..."
+//             />
+//           )}
+//           <button onClick={toggleSearch} className="search-icon">
+//             {searchVisible ? (
+//               // <CloseOutlinedIcon
+//               //   sx={{
+//               //     fontSize: 35,
+//               //     backgroundColor: "white",
+//               //     color: "black",
+//               //   }}
+//               // />
+//               <p style={{ fontSize: "20px", marginLeft: "10px" }}>❌</p>
+//             ) : (
+//               <p style={{ fontSize: "20px" }}>🔍</p>
+//               // <SearchIcon
+//               //   sx={{
+//               //     fontSize: 35,
+//               //     backgroundColor: "white",
+//               //     color: "black",
+//               //   }}
+//               // />
+//             )}
+//           </button>
+//         </div>
+
+//         {/* {user ? (
+//           <MenuItem onClick={handleLogOut}>
+//             <Typography sx={{ color: "white" }}>LogOut</Typography>
+//           </MenuItem>
+//         ) : (
+//           <Link to="/auth">
+//             <MenuItem>
+//               <Typography sx={{ color: "black" }}>Register</Typography>
+//             </MenuItem>
+//           </Link>
+//         )} */}
+//         <div className="avatar-box">
+//           {user ? (
+//             <button onClick={handleLogOut} className="avatar_icon">
+//               <AccountCircleIcon />
+//             </button>
+//           ) : (
+//             <Link to="/auth" className="avatar_icon">
+//               <AccountCircleIcon sx={{ marginLeft: "15px" }} />
+//             </Link>
+//           )}
+//           <br />
+
+//           {user ? `Hello, ${user.email}!` : "Register"}
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+//! 7777777
+// import React, { useState, useEffect } from "react";
+// import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
+// import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+// import SearchIcon from "@mui/icons-material/Search";
+// import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+// import PersonIcon from "@mui/icons-material/Person";
+// import FavoriteIcon from "@mui/icons-material/Favorite";
+// import TurnedInIcon from "@mui/icons-material/TurnedIn";
+// import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
+// import { Link } from "react-router-dom";
+// import "./Navbar.modal.css";
+// import { useCart } from "../../context/CartContextProvider";
+// import { Badge } from "@mui/material";
+// import { getProductsCountInCart } from "../../helpers/function";
+// import { useAuth } from "../../context/AuthContextProvider";
+// import { ADMIN } from "../../helpers/const";
+// import { MenuItem, Typography } from "@mui/material";
+// import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+// import { pink } from "@mui/material/colors";
+
+// const Navbar = () => {
+//   const [searchVisible, setSearchVisible] = useState(false);
+//   const [dropdownVisible, setDropdownVisible] = useState(false);
+//   const { cart } = useCart();
+//   const { user, handleLogOut } = useAuth();
+//   const cartCount = (cart.cartoons || []).length + (cart.movies || []).length;
+
+//   const toggleSearch = () => {
+//     setSearchVisible(!searchVisible);
+//   };
+
+//   const toggleDropdown = () => {
+//     setDropdownVisible(!dropdownVisible);
+//   };
+
+//   return (
+//     <nav className="navbar">
+//       <div className="navbar-container">
+//         <Link to="/" className="navbar-logo">
+//           <img
+//             src="https://static-prod.adweek.com/wp-content/uploads/2019/11/new-warner-bros-logo-transformation-content-2019.gif"
+//             alt="Warner Bros Logo"
+//           />
+//         </Link>
+
+//         <ul className="navbar-menu">
+//           <li
+//             onMouseEnter={toggleDropdown}
+//             onMouseLeave={toggleDropdown}
+//             style={{ position: "relative" }}
+//           >
+//             <p style={{ fontSize: "20px" }}>🍔</p>
+
+//             {dropdownVisible && (
+//               <div className="dropdown-menu">
+//                 <Link to="/liked" className="dropdown-item">
+//                   💗 Liked
+//                 </Link>
+//                 <Link to="/favorites" className="dropdown-item">
+//                   ⭐️ Favorites
+//                 </Link>
+//               </div>
+//             )}
+//           </li>
+//           <li>
+//             <p style={{ fontSize: "20px" }}>🎥</p>
+//             <Link to="/movies">Movies</Link>
+//           </li>
+//           <li>
+//             <p style={{ fontSize: "20px" }}>🎠</p>
+//             <Link to="/cartoons">Cartoons</Link>
+//           </li>
+
+//           <li>
+//             <Link to="/cart">
+//               <Badge badgeContent={cartCount} color="primary">
+//                 <p style={{ fontSize: "20px" }}>🛒</p>
+//               </Badge>
+//               <span>Shop</span>
+//             </Link>
+//           </li>
+//           {user?.email === ADMIN ? (
+//             <li>
+//               <p style={{ fontSize: "20px" }}>🙆🏻</p>
+//               <Link to="/admin">ADMIN</Link>
+//             </li>
+//           ) : null}
+//         </ul>
+
+//         <div className="search-box">
+//           {searchVisible && (
+//             <input
+//               type="text"
+//               className="search-input"
+//               placeholder="Search for movies, series, cartoons..."
+//             />
+//           )}
+//           <button onClick={toggleSearch} className="search-icon">
+//             {searchVisible ? (
+//               <p style={{ fontSize: "20px", marginLeft: "10px" }}>❌</p>
+//             ) : (
+//               <p style={{ fontSize: "20px" }}>🔍</p>
+//             )}
+//           </button>
+//         </div>
+
+//         <div className="avatar-box">
+//           {user ? (
+//             <button onClick={handleLogOut} className="avatar_icon">
+//               <AccountCircleIcon />
+//             </button>
+//           ) : (
+//             <Link to="/auth" className="avatar_icon">
+//               <AccountCircleIcon sx={{ marginLeft: "15px" }} />
+//             </Link>
+//           )}
+//           <br />
+
+//           {user ? `Hello, ${user.email}!` : "Register"}
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
+//!@
+import React, { useState } from "react";
 import LocalMoviesIcon from "@mui/icons-material/LocalMovies";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import PersonIcon from "@mui/icons-material/Person";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import TurnedInIcon from "@mui/icons-material/TurnedIn";
-import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./Navbar.modal.css";
 import { useCart } from "../../context/CartContextProvider";
 import { Badge } from "@mui/material";
-import { getProductsCountInCart } from "../../helpers/function";
 import { useAuth } from "../../context/AuthContextProvider";
 import { ADMIN } from "../../helpers/const";
-import { MenuItem, Typography } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { pink } from "@mui/material/colors";
+import BackgroundChanger from "./BackgroundChanger";
 
 const Navbar = () => {
   const [searchVisible, setSearchVisible] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
   const { cart } = useCart();
   const { user, handleLogOut } = useAuth();
   const cartCount = (cart.cartoons || []).length + (cart.movies || []).length;
 
   const toggleSearch = () => {
     setSearchVisible(!searchVisible);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
   };
 
   return (
@@ -419,50 +707,49 @@ const Navbar = () => {
             alt="Warner Bros Logo"
           />
         </Link>
-
         <ul className="navbar-menu">
           <li>
-            <LocalMoviesIcon />
+            <p style={{ fontSize: "20px" }}>🎥</p>
             <Link to="/movies">Movies</Link>
           </li>
           <li>
-            <LocalMoviesIcon />
+            <p style={{ fontSize: "20px" }}>🎠</p>
             <Link to="/cartoons">Cartoons</Link>
           </li>
 
           <li>
-            <FavoriteIcon />
-            <Link to="/liked">Liked</Link>
-          </li>
-          <li>
-            <TurnedInIcon />
-            <Link to="/favorites">Favorites</Link>
-          </li>
-          {/* <Link to="/cart">
-//               <Badge badgeContent={cartCount} color="primary">
-//                 <ShoppingCartIcon />
-//                 <StorefrontOutlinedIcon />
-//                 <p style={{ fontSize: "20px" }}>🛒</p>
-//               </Badge>
-//               <span>Shop</span>
-//             </Link> */}
-          <li>
             <Link to="/cart">
               <Badge badgeContent={cartCount} color="primary">
-                {/* <ShoppingCartIcon sx={{ color: "white" }} /> */}
                 <p style={{ fontSize: "20px" }}>🛒</p>
               </Badge>
               <span>Shop</span>
             </Link>
           </li>
+          <li
+            onMouseEnter={toggleDropdown}
+            onMouseLeave={toggleDropdown}
+            style={{ position: "relative" }}
+          >
+            <p style={{ fontSize: "20px" }}>🍔</p>
+
+            {dropdownVisible && (
+              <div className="dropdown-menu">
+                <Link to="/liked" className="dropdown-item">
+                  💗 Liked
+                </Link>
+                <Link to="/favorites" className="dropdown-item">
+                  ⭐️ Favorites
+                </Link>
+              </div>
+            )}
+          </li>
           {user?.email === ADMIN ? (
             <li>
-              <PersonIcon />
+              <p style={{ fontSize: "20px" }}>🙆🏻</p>
               <Link to="/admin">ADMIN</Link>
             </li>
           ) : null}
         </ul>
-
         <div className="search-box">
           {searchVisible && (
             <input
@@ -473,36 +760,12 @@ const Navbar = () => {
           )}
           <button onClick={toggleSearch} className="search-icon">
             {searchVisible ? (
-              <CloseOutlinedIcon
-                sx={{
-                  fontSize: 35,
-                  backgroundColor: "white",
-                  color: "black",
-                }}
-              />
+              <p style={{ fontSize: "20px", marginLeft: "10px" }}>❌</p>
             ) : (
-              <SearchIcon
-                sx={{
-                  fontSize: 35,
-                  backgroundColor: "white",
-                  color: "black",
-                }}
-              />
+              <p style={{ fontSize: "20px" }}>🔍</p>
             )}
           </button>
         </div>
-
-        {/* {user ? (
-          <MenuItem onClick={handleLogOut}>
-            <Typography sx={{ color: "white" }}>LogOut</Typography>
-          </MenuItem>
-        ) : (
-          <Link to="/auth">
-            <MenuItem>
-              <Typography sx={{ color: "black" }}>Register</Typography>
-            </MenuItem>
-          </Link>
-        )} */}
         <div className="avatar-box">
           {user ? (
             <button onClick={handleLogOut} className="avatar_icon">
@@ -510,10 +773,13 @@ const Navbar = () => {
             </button>
           ) : (
             <Link to="/auth" className="avatar_icon">
-              <AccountCircleIcon />
+              <AccountCircleIcon sx={{ marginLeft: "15px" }} />
             </Link>
           )}
+          <br />
+          {user ? `Hello, ${user.email}!` : "Register"}
         </div>
+        <BackgroundChanger /> {/* Вызов компонента смены фона */}
       </div>
     </nav>
   );

@@ -134,7 +134,7 @@ import CartoonCard from "../products/CartoonCard";
 import Deteil from "../products/Deteil";
 import PaginationControlled from "../products/Pagination";
 import { API_CARTOONS } from "../../helpers/const";
-// import "./CartoonList.css";
+import "./MovieList.modal.css";
 
 const CartoonList = () => {
   const [cartoons, setCartoons] = useState([]);

@@ -66,7 +66,7 @@ import MovieCard from "../products/MovieCard";
 import PaginationControlled from "../products/Pagination";
 import { API_MOVIES } from "../../helpers/const";
 import Deteil from "./Deteil";
-import "./MovieList.css"; // Импорт стилей для MovieList
+import "./MovieList.modal.css"; // Импорт стилей для MovieList
 
 const MovieList = () => {
   const [movies, setMovies] = useState([]);

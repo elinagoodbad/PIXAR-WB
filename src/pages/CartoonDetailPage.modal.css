@@ -1,21 +1,33 @@
 .movie-detail-page {
   font-family: Arial, sans-serif;
   color: #fff;
-  /* padding: 20px; */
+}
+.parallax-container {
   width: 100%;
+  height: 85vh; /* Вы можете изменить высоту по своему усмотрению */
+  position: relative;
+  overflow: hidden;
 }
 
-.banner {
-  /* margin-top: 60px; */
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.banner-detail-page {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   overflow: hidden;
 }
 
 .banner-image {
   width: 100%;
-  height: 100%;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -53,11 +65,16 @@
 .movie-detail-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 15px;
+  height: 500px;
+  text-align: center;
 }
-.movie-detail-content img {
-  margin-left: 60px;
-  width: 300px;
+.movie-detail-image img {
+  margin-top: 150px;
+  width: 50%;
+  height: 40%;
   margin-left: 150px;
 }
 
@@ -66,6 +83,7 @@
   margin-left: 200px;
   width: 50%;
   margin-right: 200px;
+  margin-top: 100px;
 }
 .movie-detail-info h2 {
   font-size: 1.5em;
@@ -125,18 +143,6 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-/* .more-pictures-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-  gap: 10px;
-}
-
-.more-pictures-grid img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-} */
 
 @media (max-width: 768px) {
   .movie-detail-content {
