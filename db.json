@@ -1,54 +1,5 @@
 {
-  "movies": [
-    {
-      "title": "DUNE: PART TWO",
-      "description": "The saga continues as award-winning filmmaker Denis Villeneuve embarks on “Dune: Part Two,” the next chapter of Frank Herbert’s celebrated novel Dune, with an expanded all-star international ensemble cast. The film, from Warner Bros. Pictures and Legendary Pictures, is the highly anticipated follow-up to 2021’s six-time Academy Award-winning “Dune.” ",
-      "image": "https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/dune2_keyart_0.jpg",
-      "genre": "Action/Adventure, Drama",
-      "year": 2024,
-      "rating": "9.7",
-      "bannerImage": "https://media.cinemacloud.co.uk/imageFilm/1725_1_2.jpg",
-      "price": 3.5,
-      "pic1": "https://uznayvse.ru/images/content/2021/6/uzn_16246104095.jpg",
-      "pic2": "https://248006.selcdn.ru/main/iblock/6c0/6c025a974b0338d2694e8812d9c0dee1/d5d8bae8d8722524a4b19e100232f906.png",
-      "pic3": "https://www.kino-teatr.ru/art/7215/114713.jpg",
-      "pic4": "https://pentanglearts.org/wp-content/uploads/2024/02/Dune-Banner.jpg",
-      "pic5": "https://images.squarespace-cdn.com/content/v1/59e512ddf43b55c29c71b996/984abba8-d184-409c-bdff-5d130025f088/dune_2021_2.jpeg",
-      "pic6": "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/05/22/43/75/36/c37869740cd7.jpg",
-      "pic7": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2024/03/dune-part-2.jpeg",
-      "pic8": "https://media.revistagq.com/photos/60faa6d464ee72f23c7a85f4/master/pass/dune-trailer-estreno-espan%CC%83a.jpeg",
-      "trailer1Image": "https://s0.rbk.ru/v6_top_pics/media/img/1/76/346880560625761.webp",
-      "trailer1Link": "https://youtu.be/n9xhJrPXop4",
-      "trailer2Image": "https://assets.telegraphindia.com/telegraph/2023/Jun/1688111171_dune-part-two-trailer.jpg",
-      "trailer2Link": "https://youtu.be/_YUzQa_1RCE",
-      "category": "Movies",
-      "id": 1
-    },
-    {
-      "title": "s",
-      "description": "The saga continues as award-winning filmmaker Denis Villeneuve embarks on “Dune: Part Two,” the next chapter of Frank Herbert’s celebrated novel Dune, with an expanded all-star international ensemble cast. The film, from Warner Bros. Pictures and Legendary Pictures, is the highly anticipated follow-up to 2021’s six-time Academy Award-winning “Dune.” ",
-      "image": "s",
-      "genre": "Action/Adventure, Drama",
-      "year": 1,
-      "rating": "9.7",
-      "bannerImage": "https://media.cinemacloud.co.uk/imageFilm/1725_1_2.jpg",
-      "price": 81.97,
-      "pic1": "https://uznayvse.ru/images/content/2021/6/uzn_16246104095.jpg",
-      "pic2": "https://248006.selcdn.ru/main/iblock/6c0/6c025a974b0338d2694e8812d9c0dee1/d5d8bae8d8722524a4b19e100232f906.png",
-      "pic3": "https://www.kino-teatr.ru/art/7215/114713.jpg",
-      "pic4": "https://pentanglearts.org/wp-content/uploads/2024/02/Dune-Banner.jpg",
-      "pic5": "https://images.squarespace-cdn.com/content/v1/59e512ddf43b55c29c71b996/984abba8-d184-409c-bdff-5d130025f088/dune_2021_2.jpeg",
-      "pic6": "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/05/22/43/75/36/c37869740cd7.jpg",
-      "pic7": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2024/03/dune-part-2.jpeg",
-      "pic8": "https://media.revistagq.com/photos/60faa6d464ee72f23c7a85f4/master/pass/dune-trailer-estreno-espan%CC%83a.jpeg",
-      "trailer1Image": "https://s0.rbk.ru/v6_top_pics/media/img/1/76/346880560625761.webp",
-      "trailer1Link": "https://youtu.be/n9xhJrPXop4",
-      "trailer2Image": "https://assets.telegraphindia.com/telegraph/2023/Jun/1688111171_dune-part-two-trailer.jpg",
-      "trailer2Link": "https://youtu.be/_YUzQa_1RCE",
-      "category": "Movies",
-      "id": 2
-    }
-  ],
+  "movies": [],
   "cartoons": [
     {
       "title": "Inside Out 2",
@@ -93,7 +44,6 @@
       "trailer": "https://youtu.be/hXzcyx9V0xw",
       "trailer2": "https://youtu.be/-cT495xKvvs",
       "genre": "cartoon",
-
       "id": 2
     },
     {
@@ -186,7 +136,6 @@
       "trailer": "https://youtu.be/gn5QmllRCn4",
       "trailer2": "https://youtu.be/x8DKg_fsacM",
       "genre": "cartoon",
-
       "id": 6
     },
     {
@@ -210,7 +159,6 @@
       "trailer": "https://youtu.be/wmiIUN-7qhE",
       "trailer2": "https://youtu.be/LDXYRzerjzU",
       "genre": "cartoon",
-
       "id": 7
     },
     {

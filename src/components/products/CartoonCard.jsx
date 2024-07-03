@@ -51,6 +51,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./CartoonCard.modal.css";
 import { Button } from "@mui/material";
 import { Delete as DeleteIcon, Edit as EditIcon } from "@mui/icons-material";
+import "./CartoonCard.css";
 
 const CartoonCard = ({ cartoon, onOpenModal, onDelete }) => {
   const navigate = useNavigate();
@@ -65,36 +66,29 @@ const CartoonCard = ({ cartoon, onOpenModal, onDelete }) => {
         <img
           src={cartoon.image}
           alt={cartoon.title}
-          className="cartoon-image"
           onClick={() => onOpenModal(cartoon)}
         />
       </Link>
-      <h2 className="cartoon-title">{cartoon.title}</h2>
-      <Button
-        className="details-button"
-        onClick={() => onOpenModal(cartoon)}
-        variant="contained"
-      >
-        MORE
-      </Button>
-      <Button
-        color="error"
-        variant="outlined"
-        size="small"
-        onClick={() => onDelete(cartoon.id)}
-        startIcon={<DeleteIcon />}
-      >
-        Delete
-      </Button>
-      <Button
-        onClick={handleEdit}
-        color="primary"
-        variant="outlined"
-        size="small"
-        startIcon={<EditIcon />}
-      >
-        Edit
-      </Button>
+      <h2>{cartoon.title}</h2>
+      <div className="btn">
+        <Button style={{ color: "white" }} onClick={() => onOpenModal(cartoon)}>
+          MORE
+        </Button>
+        <Button
+          style={{ color: "white" }}
+          onClick={() => onDelete(cartoon.id)}
+          startIcon={<DeleteIcon />}
+        >
+          Delete
+        </Button>
+        <Button
+          style={{ color: "white" }}
+          onClick={handleEdit}
+          startIcon={<EditIcon />}
+        >
+          Edit
+        </Button>
+      </div>
     </div>
   );
 };

@@ -450,7 +450,7 @@ const Navbar = () => {
             <Link to="/cart">
               <Badge badgeContent={cartCount} color="primary">
                 {/* <ShoppingCartIcon sx={{ color: "white" }} /> */}
-                <p style={{ fontSize: "20px" }}>🛒</p>
+                <p style={{ fontSize: "20px", marginTop: "5px" }}>🛒</p>
               </Badge>
               <span>Shop</span>
             </Link>

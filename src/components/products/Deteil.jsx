@@ -646,7 +646,6 @@ import SellIcon from "@mui/icons-material/Sell";
 import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "./Deteil.css";
-import { blue } from "@mui/material/colors";
 import { useCart } from "../../context/CartContextProvider";
 
 const Deteil = ({ movie, handleCloseModal }) => {

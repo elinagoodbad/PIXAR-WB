@@ -58,8 +58,10 @@ import { Link, useNavigate } from "react-router-dom";
 import "./MovieCard.modal.css";
 import { Button } from "@mui/material";
 import { Delete as DeleteIcon, Edit as EditIcon } from "@mui/icons-material";
+import { useMovie } from "../../context/MovieContextProvider";
 
 const MovieCard = ({ movie, onOpenModal, onDelete }) => {
+  const { deleteMovie } = useMovie();
   const navigate = useNavigate();
 
   const handleEdit = () => {
@@ -88,7 +90,9 @@ const MovieCard = ({ movie, onOpenModal, onDelete }) => {
         color="error"
         variant="outlined"
         size="small"
-        onClick={() => onDelete(movie.id)}
+        onClick={() => {
+          deleteMovie(movie.id);
+        }}
         startIcon={<DeleteIcon />}
       >
         Delete

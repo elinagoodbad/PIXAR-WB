@@ -1,0 +1,31 @@
+.cartoon-card {
+  padding: 35px;
+  margin: 16px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+.cartoon-card img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.cartoon-card h2 {
+  font-size: 30px;
+  margin: 16px 0;
+  color: white;
+}
+
+.cartoon-card button {
+  margin: 8px;
+}
+.btn {
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
+  padding: 12px 24px;
+}
+.btn:hover {
+  background-color: #45a049;
+}

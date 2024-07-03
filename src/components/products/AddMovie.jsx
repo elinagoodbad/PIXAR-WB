@@ -92,9 +92,9 @@
 //!
 import React, { useState } from "react";
 import { useMovie } from "../../context/MovieContextProvider";
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 import CategorySelect from "./CategorySelect";
-import CartoonList from "./CartoonList"; // Добавлено импортирование CartoonList
+import "./AddMovie.css";
 
 const AddMovie = () => {
   const { createMovie, createCartoon } = useMovie();
@@ -154,192 +154,228 @@ const AddMovie = () => {
   };
 
   return (
-    <Box
-      sx={{
-        width: "50vw",
-        height: "auto",
-        margin: "20px auto",
-        display: "flex",
-        flexDirection: "column",
-        gap: "16px",
-        padding: "20px",
-        borderRadius: "8px",
-        boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-      }}
-    >
-      <Typography variant="h4" align="center">
-        Add {movie.category === "Cartoons" ? "Cartoon" : "Movie"}
-      </Typography>
-      <TextField
-        name="title"
-        fullWidth
-        label="Title"
-        variant="outlined"
-        value={movie.title}
-        onChange={handleInput}
-      />
-      <TextField
-        name="description"
-        fullWidth
-        label="Description"
-        variant="outlined"
-        value={movie.description}
-        onChange={handleInput}
-      />
-      <TextField
-        name="image"
-        fullWidth
-        label="Image"
-        variant="outlined"
-        value={movie.image}
-        onChange={handleInput}
-      />
-      <TextField
-        name="year"
-        fullWidth
-        label="Year"
-        variant="outlined"
-        value={movie.year}
-        onChange={handleInput}
-      />
-      <TextField
-        name="rating"
-        fullWidth
-        label="Rating"
-        variant="outlined"
-        value={movie.rating}
-        onChange={handleInput}
-      />
-      <TextField
-        name="bannerImage"
-        fullWidth
-        label="Banner Image"
-        variant="outlined"
-        value={movie.bannerImage}
-        onChange={handleInput}
-      />
-      <TextField
-        name="price"
-        fullWidth
-        label="Price"
-        variant="outlined"
-        value={movie.price}
-        onChange={handleInput}
-      />
-      <TextField
-        name="pic1"
-        fullWidth
-        label="Picture 1"
-        variant="outlined"
-        value={movie.pic1}
-        onChange={handleInput}
-      />
-      <TextField
-        name="pic2"
-        fullWidth
-        label="Picture 2"
-        variant="outlined"
-        value={movie.pic2}
-        onChange={handleInput}
-      />
-      <TextField
-        name="pic3"
-        fullWidth
-        label="Picture 3"
-        variant="outlined"
-        value={movie.pic3}
-        onChange={handleInput}
-      />
-      <TextField
-        name="pic4"
-        fullWidth
-        label="Picture 4"
-        variant="outlined"
-        value={movie.pic4}
-        onChange={handleInput}
-      />
-      <TextField
-        name="pic5"
-        fullWidth
-        label="Picture 5"
-        variant="outlined"
-        value={movie.pic5}
-        onChange={handleInput}
-      />
-      <TextField
-        name="pic6"
-        fullWidth
-        label="Picture 6"
-        variant="outlined"
-        value={movie.pic6}
-        onChange={handleInput}
-      />
-      <TextField
-        name="pic7"
-        fullWidth
-        label="Picture 7"
-        variant="outlined"
-        value={movie.pic7}
-        onChange={handleInput}
-      />
-      <TextField
-        name="pic8"
-        fullWidth
-        label="Picture 8"
-        variant="outlined"
-        value={movie.pic8}
-        onChange={handleInput}
-      />
-      <TextField
-        name="trailer1Image"
-        fullWidth
-        label="Trailer 1 Image"
-        variant="outlined"
-        value={movie.trailer1Image}
-        onChange={handleInput}
-      />
-      <TextField
-        name="trailer1Link"
-        fullWidth
-        label="Trailer 1 Link"
-        variant="outlined"
-        value={movie.trailer1Link}
-        onChange={handleInput}
-      />
-      <TextField
-        name="trailer2Image"
-        fullWidth
-        label="Trailer 2 Image"
-        variant="outlined"
-        value={movie.trailer2Image}
-        onChange={handleInput}
-      />
-      <TextField
-        name="trailer2Link"
-        fullWidth
-        label="Trailer 2 Link"
-        variant="outlined"
-        value={movie.trailer2Link}
-        onChange={handleInput}
-      />
-      <TextField
-        name="genre"
-        fullWidth
-        label="Genre"
-        variant="outlined"
-        value={movie.genre}
-        onChange={handleInput}
-      />
-      <CategorySelect handleCategoryChange={handleCategoryChange} />
-      <Button onClick={handleClick} fullWidth variant="contained">
-        Add {movie.category === "Cartoons" ? "Cartoon" : "Movie"}
-      </Button>
-
-      {/* Добавлен компонент CartoonList */}
-      {/* {movie.category === "Cartoons" && (
-        <CartoonList cartoons={[]} onSelectCartoon={() => {}} /> // Передайте сюда список мультфильмов и обработчик выбора
-      )} */}
-    </Box>
+    <div className="admin">
+      <Box sx={{ width: "100%", marginTop: 2 }}>
+        <Typography variant="h4" align="center" marginBottom={2}>
+          Add {movie.category === "Cartoons" ? "Cartoon" : "Movie"}
+        </Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="title"
+              fullWidth
+              label="Title"
+              variant="outlined"
+              value={movie.title}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="description"
+              fullWidth
+              label="Description"
+              variant="outlined"
+              value={movie.description}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="image"
+              fullWidth
+              label="Image"
+              variant="outlined"
+              value={movie.image}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="year"
+              fullWidth
+              label="Year"
+              variant="outlined"
+              value={movie.year}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="rating"
+              fullWidth
+              label="Rating"
+              variant="outlined"
+              value={movie.rating}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="bannerImage"
+              fullWidth
+              label="Banner Image"
+              variant="outlined"
+              value={movie.bannerImage}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="price"
+              fullWidth
+              label="Price"
+              variant="outlined"
+              value={movie.price}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="pic1"
+              fullWidth
+              label="Picture 1"
+              variant="outlined"
+              value={movie.pic1}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="pic2"
+              fullWidth
+              label="Picture 2"
+              variant="outlined"
+              value={movie.pic2}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="pic3"
+              fullWidth
+              label="Picture 3"
+              variant="outlined"
+              value={movie.pic3}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="pic4"
+              fullWidth
+              label="Picture 4"
+              variant="outlined"
+              value={movie.pic4}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="pic5"
+              fullWidth
+              label="Picture 5"
+              variant="outlined"
+              value={movie.pic5}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="pic6"
+              fullWidth
+              label="Picture 6"
+              variant="outlined"
+              value={movie.pic6}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="pic7"
+              fullWidth
+              label="Picture 7"
+              variant="outlined"
+              value={movie.pic7}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="pic8"
+              fullWidth
+              label="Picture 8"
+              variant="outlined"
+              value={movie.pic8}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="trailer1Image"
+              fullWidth
+              label="Trailer 1 Image"
+              variant="outlined"
+              value={movie.trailer1Image}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="trailer1Link"
+              fullWidth
+              label="Trailer 1 Link"
+              variant="outlined"
+              value={movie.trailer1Link}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="trailer2Image"
+              fullWidth
+              label="Trailer 2 Image"
+              variant="outlined"
+              value={movie.trailer2Image}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="trailer2Link"
+              fullWidth
+              label="Trailer 2 Link"
+              variant="outlined"
+              value={movie.trailer2Link}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <TextField
+              name="genre"
+              fullWidth
+              label="Genre"
+              variant="outlined"
+              value={movie.genre}
+              onChange={handleInput}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <CategorySelect handleC />
+          </Grid>
+          <Grid item xs={12}>
+            <Button
+              onClick={handleClick}
+              fullWidth
+              variant="contained"
+              sx={{ marginTop: 2 }}
+            >
+              Add {movie.category === "Cartoons" ? "Cartoon" : "Movie"}
+            </Button>
+          </Grid>
+        </Grid>
+      </Box>
+    </div>
   );
 };
 

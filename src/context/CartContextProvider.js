@@ -169,7 +169,8 @@ const CartContextProvider = ({ children }) => {
           ...state,
           cart: action.payload,
           cartLength:
-            action.payload.cartoons.length + action.payload.movies.length,
+            (action.payload.cartoons ? action.payload.cartoons.length : 0) +
+            (action.payload.movies ? action.payload.movies.length : 0),
         };
       default:
         return state;
@@ -214,7 +215,10 @@ const CartContextProvider = ({ children }) => {
 
   const checkProductInCart = (id, category) => {
     const cart = getLocalStorage();
-    return cart ? cart[category].some((elem) => elem.item.id === id) : false;
+    if (cart && cart[category] && Array.isArray(cart[category])) {
+      return cart[category].some((elem) => elem.item.id === id);
+    }
+    return false;
   };
 
   const changeProductCount = (id, count) => {
