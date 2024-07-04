@@ -1,4 +1,3 @@
-// src/data/MovieData.js
 export const cartoonsData = [
   {
     title: "Inside Out 2",
@@ -42,5 +41,4 @@ export const cartoonsData = [
     trailer2: "https://youtu.be/-cT495xKvvs",
     genre: "cartoon",
   },
-  // Добавьте другие мультфильмы по аналогии
 ];

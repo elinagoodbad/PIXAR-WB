@@ -1,65 +1,3 @@
-// import React, { useState, useEffect } from "react";
-// import "./Comments.modal.css";
-
-// const Comments = ({ movieId, onClose }) => {
-//   const [comments, setComments] = useState([]);
-//   const [newComment, setNewComment] = useState("");
-
-//   useEffect(() => {
-
-//     fetch(`http://localhost:3000/comments?movieId=${movieId}`)
-//       .then((response) => response.json())
-//       .then((data) => setComments(data));
-//   }, [movieId]);
-
-//   const handleAddComment = () => {
-//     const comment = {
-//       movieId,
-//       text: newComment,
-//     };
-
-//     fetch("http://localhost:3000/comments", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(comment),
-//     })
-//       .then((response) => response.json())
-//       .then((data) => {
-//         setComments([...comments, data]);
-//         setNewComment("");
-//       });
-//   };
-
-//   return (
-//     <div className="comments-modal">
-//       <div className="comments-modal-content">
-//         <span className="close-button" onClick={onClose}>
-//           ×
-//         </span>
-//         <div className="comments-list">
-//           {comments.map((comment, index) => (
-//             <div key={index} className="comment">
-//               {comment.text}
-//             </div>
-//           ))}
-//         </div>
-//         <div className="add-comment">
-//           <textarea
-//             value={newComment}
-//             onChange={(e) => setNewComment(e.target.value)}
-//             placeholder="Add a comment..."
-//           />
-//           <button onClick={handleAddComment}>Post Comment</button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Comments;
-//!
 import React, { useState } from "react";
 import { Modal, Box, TextField, Button } from "@mui/material";
 import { useProduct } from "../../context/ProductContextProvider";
@@ -71,13 +9,13 @@ const CommentModal = ({ open, handleClose, productId }) => {
 
   const handleSubmit = async () => {
     if (name.trim() === "" || comment.trim() === "") {
-      return; // Не отправляем пустой комментарий
+      return;
     }
 
     await addComment(productId, { name, comment });
-    setName(""); // Очистка поля имени
-    setComment(""); // Очистка поля комментария
-    handleClose(); // Закрыть модальное окно
+    setName("");
+    setComment("");
+    handleClose();
   };
 
   return (
@@ -92,7 +30,7 @@ const CommentModal = ({ open, handleClose, productId }) => {
           bgcolor: "background.paper",
           boxShadow: 24,
           p: 4,
-          borderRadius: 2, // Закругленные углы
+          borderRadius: 2,
         }}
       >
         <TextField
@@ -101,7 +39,7 @@ const CommentModal = ({ open, handleClose, productId }) => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           margin="normal"
-          variant="outlined" // Рамка инпутов
+          variant="outlined"
         />
         <TextField
           fullWidth

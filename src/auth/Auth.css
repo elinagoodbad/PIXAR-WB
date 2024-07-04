@@ -122,3 +122,164 @@
   color: #111;
   text-decoration: none;
 }
+@media (min-width: 1440px) {
+  .ring {
+    width: 500px;
+    height: 500px;
+  }
+
+  .login {
+    width: 300px;
+  }
+
+  .login h2 {
+    font-size: 2em;
+  }
+
+  .login .inputBx input {
+    font-size: 1.2em;
+  }
+
+  .login .inputBx input[type="submit"] {
+    font-size: 1.2em;
+  }
+
+  .login .links {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .ring {
+    width: 450px;
+    height: 450px;
+  }
+
+  .login {
+    width: 280px;
+  }
+
+  .login h2 {
+    font-size: 1.8em;
+  }
+
+  .login .inputBx input {
+    font-size: 1.1em;
+  }
+
+  .login .inputBx input[type="submit"] {
+    font-size: 1.1em;
+  }
+
+  .login .links {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .ring {
+    width: 400px;
+    height: 400px;
+  }
+
+  .login {
+    width: 260px;
+  }
+
+  .login h2 {
+    font-size: 1.6em;
+  }
+
+  .login .inputBx input {
+    font-size: 1em;
+  }
+
+  .login .inputBx input[type="submit"] {
+    font-size: 1em;
+  }
+
+  .login .links {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 425px) {
+  .ring {
+    width: 350px;
+    height: 350px;
+  }
+
+  .login {
+    width: 240px;
+  }
+
+  .login h2 {
+    font-size: 1.4em;
+  }
+
+  .login .inputBx input {
+    font-size: 0.9em;
+  }
+
+  .login .inputBx input[type="submit"] {
+    font-size: 0.9em;
+  }
+
+  .login .links {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 424px) and (min-width: 375px) {
+  .ring {
+    width: 300px;
+    height: 300px;
+  }
+
+  .login {
+    width: 220px;
+  }
+
+  .login h2 {
+    font-size: 1.3em;
+  }
+
+  .login .inputBx input {
+    font-size: 0.9em;
+  }
+
+  .login .inputBx input[type="submit"] {
+    font-size: 0.9em;
+  }
+
+  .login .links {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 374px) {
+  .ring {
+    width: 250px;
+    height: 250px;
+  }
+
+  .login {
+    width: 200px;
+  }
+
+  .login h2 {
+    font-size: 1.2em;
+  }
+
+  .login .inputBx input {
+    font-size: 0.8em;
+  }
+
+  .login .inputBx input[type="submit"] {
+    font-size: 0.8em;
+  }
+
+  .login .links {
+    padding: 0 5px;
+  }
+}

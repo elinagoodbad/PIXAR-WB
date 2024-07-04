@@ -1,4 +1,3 @@
-// src/pages/LikedPage.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./LikedPage.modal.css";

@@ -14,3 +14,58 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .movie-cards-container {
+    gap: 15px;
+  }
+
+  .movie-list-container {
+    padding: 15px;
+  }
+
+  .pagination-position {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .movie-cards-container {
+    gap: 10px;
+  }
+
+  .movie-list-container {
+    padding: 10px;
+  }
+
+  .pagination-position {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .movie-cards-container {
+    gap: 8px;
+  }
+
+  .movie-list-container {
+    padding: 8px;
+  }
+
+  .pagination-position {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .movie-cards-container {
+    gap: 5px;
+  }
+
+  .movie-list-container {
+    padding: 5px;
+  }
+
+  .pagination-position {
+    margin-top: 5px;
+  }
+}

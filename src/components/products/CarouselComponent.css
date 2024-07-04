@@ -1,17 +1,16 @@
 .custom-carousel {
   position: relative;
-  height: 500px; /* Высота карусели */
+  height: 500px;
 }
 
 .custom-carousel .carousel-caption {
   bottom: 20%;
-  /* Измените `bottom` для размещения текста выше или ниже в зависимости от вашего дизайна */
 }
 
 .custom-carousel .carousel-caption a {
   color: white;
   font-size: 40px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень текста */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;

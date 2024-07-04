@@ -1,5 +1,5 @@
 footer {
-  background-color: #fff; /* Светлый фон */
+  background-color: #fff;
   color: #333;
   padding: 60px 0 40px;
   border-top: 1px solid #e0e0e0;
@@ -34,7 +34,7 @@ footer {
 .footer-col h3 .underline {
   width: 60px;
   height: 3px;
-  background-color: #1d1d1d; /* Черная линия под заголовком */
+  background-color: #1d1d1d;
   margin-top: 5px;
 }
 
@@ -120,7 +120,6 @@ footer {
 }
 
 .footer-bottom {
-  background-color: #1d1d1d; /* Темно-серый фон */
   color: #fff;
   padding: 20px 0;
   text-align: center;

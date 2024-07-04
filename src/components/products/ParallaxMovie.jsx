@@ -5,8 +5,8 @@ const ParallaxMovie = () => {
   return (
     <Box
       sx={{
-        width: "100%", // Устанавливаем ширину на 100%
-        height: "100vh", // Высота на весь экран
+        width: "100%",
+        height: "100vh",
         backgroundImage: `url(https://fullhdoboi.ru/wp-content/uploads/_ph/4/496545428.jpg)`,
         backgroundAttachment: "fixed",
         backgroundPosition: "center",

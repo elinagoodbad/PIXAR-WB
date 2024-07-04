@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import axios from "axios";
 import "./MovieDetailPage.modal.css";
 
 const MovieDetailPage = () => {
@@ -9,10 +10,10 @@ const MovieDetailPage = () => {
   useEffect(() => {
     const fetchMovie = async () => {
       try {
-        const response = await fetch(
+        const response = await axios.get(
           `http://localhost:8000/movies?title=${title}`
         );
-        const data = await response.json();
+        const data = response.data;
         if (data.length > 0) {
           setMovie(data[0]);
         } else {
@@ -32,10 +33,18 @@ const MovieDetailPage = () => {
 
   return (
     <div className="movie-detail-page">
-      <div className="banner-detail-page">
-        <img src={movie.bannerImg} alt={movie.title} className="banner-image" />
-        <div className="banner-overlay">
-          <h1 className="movie-title"> {movie.title}</h1>
+      <div
+        className="parallax-container"
+        style={{
+          backgroundImage: `url(${movie.bannerImg})`,
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="parallax-content">
+          <h1 className="movie-title">{movie.title}</h1>
         </div>
       </div>
       <div className="movie-additional-info">
@@ -47,14 +56,16 @@ const MovieDetailPage = () => {
         <h2>TRAILER</h2>
 
         <a href={movie.trailer}>
-          <img src={movie.trailer1Img} />
+          <img src={movie.trailer1Img} alt="Trailer 1" />
         </a>
         <a href={movie.trailer2}>
-          <img src={movie.trailer2Img} />
+          <img src={movie.trailer2Img} alt="Trailer 2" />
         </a>
       </div>
       <div className="movie-detail-content">
-        <img src={movie.image} alt={movie.title} className="banner-image" />
+        <div className="movie-detail-image">
+          <img src={movie.image} alt={movie.title} className="banner-image" />
+        </div>
 
         <div className="movie-detail-info">
           <h2>Overview</h2>
@@ -69,7 +80,7 @@ const MovieDetailPage = () => {
             <strong>Rating:</strong> {movie.rating}
           </p>
           <p>
-            <strong>Price:</strong> {movie.price}$
+            <strong>Price:</strong> {movie.price}
           </p>
         </div>
       </div>

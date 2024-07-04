@@ -1,284 +1,158 @@
-// import React from "react";
-// import { Link, useNavigate } from "react-router-dom";
-// import "./CartoonCard.modal.css"; // Обновленные стили для CartoonCard
-// import { Button } from "@mui/material"; // Обновляем импорт кнопок на MUI
-
-// const CartoonCard = ({ cartoon, onOpenModal, onDelete }) => {
-//   const navigate = useNavigate(); // Хук для навигации
-
-//   const handleEdit = () => {
-//     navigate(`/edit/${cartoon.id}`); // Перенаправление на страницу редактирования мультфильма
-//   };
-
-//   return (
-//     <div className="cartoon-card">
-//       <Link to={`/cartoons/${cartoon.title}`}>
-//         <img
-//           src={cartoon.image}
-//           alt={cartoon.title}
-//           className="cartoon-image"
-//           onClick={() => onOpenModal(cartoon)} // Открытие модального окна при клике на изображение
-//         />
-//       </Link>
-//       <h2 className="cartoon-title">{cartoon.title}</h2>
-
-//       {user.email == ADMIN ? (
-//       <Button
-//         color="error" // Обновляем цвет на красный для удаления
-//         variant="outlined"
-//         size="medium"
-//         onClick={() => onDelete(cartoon.id)} // Вызов функции удаления
-//       >
-//         Delete
-//       </Button>
-//       <Button
-//         onClick={handleEdit}
-//         color="primary" // Обновляем цвет на синий для редактирования
-//         variant="outlined"
-//         size="medium"
-//       >
-//         Edit
-//       </Button>
-//       ) : (
-//         <button className="details-button" onClick={() => onOpenModal(cartoon)}>
-//         MORE
-//       </button>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default CartoonCard;
-
-// import React from "react";
-// import { Link, useNavigate } from "react-router-dom";
-// import "./CartoonCard.modal.css";
-// import { Button } from "@mui/material";
-// import { Delete as DeleteIcon, Edit as EditIcon } from "@mui/icons-material";
-
-// const CartoonCard = ({ cartoon, onOpenModal, onDelete }) => {
-//   const navigate = useNavigate();
-
-//   const handleEdit = () => {
-//     navigate(`/edit/${cartoon.id}`);
-//   };
-
-//   return (
-//     <div className="cartoon-card">
-//       <Link to={`/cartoons/${cartoon.title}`}>
-//         <img
-//           src={cartoon.image}
-//           alt={cartoon.title}
-//           className="cartoon-image"
-//           onClick={() => onOpenModal(cartoon)}
-//         />
-//       </Link>
-//       <h2 className="cartoon-title">{cartoon.title}</h2>
-
-//       {user.email == ADMIN ? (
-//       <Button
-//         color="error"
-//         variant="outlined"
-//         size="small"
-//         onClick={() => onDelete(cartoon.id)}
-//         startIcon={<DeleteIcon />}
-//       >
-//         Delete
-//       </Button>
-//       <Button
-//         onClick={handleEdit}
-//         color="primary"
-//         variant="outlined"
-//         size="small"
-//         startIcon={<EditIcon />}
-//       >
-//         Edit
-//       </Button>
-//         ) : (
-//           <Button
-//           className="details-button"
-//           onClick={() => onOpenModal(cartoon)}
-//           variant="contained"
-//         >
-//           MORE
-//         </Button>
-//         )}
-//     </div>
-//   );
-// };
-
-// export default CartoonCard;
-// import React, { useState } from "react";
-// import { Link, useNavigate } from "react-router-dom";
-// import {
-//   Button,
-//   Card,
-//   CardActionArea,
-//   CardContent,
-//   CardMedia,
-//   IconButton,
-//   Typography,
-// } from "@mui/material";
-// import { Delete as DeleteIcon, Edit as EditIcon } from "@mui/icons-material";
-// import { useAuth } from "../../context/AuthContextProvider";
-// import { ADMIN } from "../../helpers/const";
-
-// import "./CartoonCard.modal.css"; // Обновленные стили для CartoonCard
-// import Deteil from "./Deteil";
-
-// const CartoonCard = ({ cartoon, onOpenModal, onDelete }) => {
-//   const navigate = useNavigate();
-//   const [open, setOpen] = useState(false);
-//   const handleOpen = () => setOpen(true);
-//   const handleClose = () => setOpen(false);
-//   const { user } = useAuth();
-
-//   const handleEdit = () => {
-//     navigate(`/edit/${cartoon.id}`);
-//   };
-
-//   return (
-//     <Card
-//       sx={{
-//         height: 650,
-//         boxShadow: "none",
-//         margin: "25px",
-//         width: { md: "30vw", lg: "19vw" },
-//         backgroundColor: "#f9f9f9",
-//         borderRadius: 4,
-//         border: "1px solid #ddd",
-//       }}
-//     >
-//       <CardActionArea onClick={handleOpen}>
-//         <CardMedia
-//           sx={{ height: 240, borderRadius: 4, border: "2px solid black" }}
-//           image={cartoon.image}
-//         />
-//       </CardActionArea>
-//       <CardContent
-//         sx={{
-//           padding: "20px 5px 0px 5px",
-//           display: "flex",
-//           height: 300,
-//           flexDirection: "column",
-//           justifyContent: "space-between",
-//         }}
-//       >
-//         <Typography variant="h5" fontSize="20" fontWeight={700} component="div">
-//           {cartoon.title}
-//         </Typography>
-//         <Typography color="gray" fontSize="14px">
-//           {cartoon.description}
-//         </Typography>
-//         {user && user.email === ADMIN ? (
-//           <>
-//             <Button
-//               color="error"
-//               variant="outlined"
-//               size="medium"
-//               onClick={() => onDelete(cartoon.id)}
-//               startIcon={<DeleteIcon />}
-//             >
-//               Delete
-//             </Button>
-//             {/* <Button
-//               onClick={handleEdit}
-//               color="primary"
-//               variant="outlined"
-//               size="medium"
-//               startIcon={<EditIcon />}
-//             >
-//               Edit
-//             </Button> */}
-//           </>
-//         ) : (
-//           <Button
-//             className="details-button"
-//             onClick={() => onOpenModal(cartoon)}
-//             variant="contained"
-//           >
-//             MORE
-//           </Button>
-//         )}
-//       </CardContent>
-//       <Deteil elem={cartoon} open={open} handleClose={handleClose} />
-//     </Card>
-//   );
-// };
-
-// export default CartoonCard;
-//!doneeee
-// import React from "react";
-// import { Link, useNavigate } from "react-router-dom";
-// import { Button } from "@mui/material"; // Обновляем импорт кнопок на MUI
-// import { useAuth } from "../../context/AuthContextProvider"; // Импортируем useAuth
-// import { ADMIN } from "../../helpers/const"; // Импортируем ADMIN константу
-// import "./CartoonCard.modal.css"; // Обновленные стили для CartoonCard
-
-// const CartoonCard = ({ cartoon, onOpenModal, onDelete }) => {
-//   const navigate = useNavigate(); // Хук для навигации
-//   const { user } = useAuth(); // Используем useAuth для доступа к user объекту
-
-//   const handleEdit = () => {
-//     navigate(`/edit/${cartoon.id}`); // Перенаправление на страницу редактирования мультфильма
-//   };
-
-//   return (
-//     <div className="cartoon-card">
-//       <Link to={`/cartoons/${cartoon.title}`}>
-//         <img
-//           src={cartoon.image}
-//           alt={cartoon.title}
-//           className="cartoon-image"
-//           onClick={() => onOpenModal(cartoon)} // Открытие модального окна при клике на изображение
-//         />
-//       </Link>
-//       <h2 className="cartoon-title">{cartoon.title}</h2>
-
-//       {user && user.email === ADMIN ? (
-//         <>
-//           <Button
-//             color="error" // Обновляем цвет на красный для удаления
-//             variant="outlined"
-//             size="medium"
-//             onClick={() => onDelete(cartoon.id)} // Вызов функции удаления
-//           >
-//             Delete
-//           </Button>
-//           <Button
-//             onClick={handleEdit}
-//             color="primary" // Обновляем цвет на синий для редактирования
-//             variant="outlined"
-//             size="medium"
-//           >
-//             Edit
-//           </Button>
-//         </>
-//       ) : (
-//         <button className="details-button" onClick={() => onOpenModal(cartoon)}>
-//           MORE
-//         </button>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default CartoonCard;
-//!
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
-import { Delete as DeleteIcon, Edit as EditIcon } from "@mui/icons-material";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 import { useAuth } from "../../context/AuthContextProvider";
+import { useCart } from "../../context/CartContextProvider";
 import { ADMIN } from "../../helpers/const";
+import axios from "axios";
 import "./CartoonCard.modal.css";
 
 const CartoonCard = ({ cartoon, onOpenModal, onDelete }) => {
   const navigate = useNavigate();
   const { user } = useAuth();
+  const { addProductToCart, checkProductInCart } = useCart();
+  const [isBookmarked, setIsBookmarked] = useState(false);
+  const [isFavoriteMark, setIsFavoriteMark] = useState(false);
+  const [isInCart, setIsInCart] = useState(false);
+  const [isCommentModalOpen, setIsCommentModalOpen] = useState(false);
+  const [isAddCommentModalOpen, setIsAddCommentModalOpen] = useState(false);
+  const [comments, setComments] = useState([]);
+  const [newComment, setNewComment] = useState("");
+
+  useEffect(() => {
+    const likedCartoons =
+      JSON.parse(localStorage.getItem("likedCartoons")) || [];
+    const favoriteCartoons =
+      JSON.parse(localStorage.getItem("favoriteCartoons")) || [];
+    const savedComments =
+      JSON.parse(localStorage.getItem(`comments-${cartoon.title}`)) || [];
+
+    const isCartoonLiked =
+      Array.isArray(likedCartoons) &&
+      likedCartoons.some((c) => c.title === cartoon.title);
+    const isCartoonFavorited =
+      Array.isArray(favoriteCartoons) &&
+      favoriteCartoons.some((c) => c.title === cartoon.title);
+    const isCartoonInCart =
+      checkProductInCart && checkProductInCart(cartoon.id, "cartoons");
+
+    setIsFavoriteMark(isCartoonLiked);
+    setIsBookmarked(isCartoonFavorited);
+    setComments(savedComments);
+    setIsInCart(isCartoonInCart);
+  }, [cartoon.title, checkProductInCart]);
+
+  const toggleBookmark = () => {
+    setIsBookmarked(!isBookmarked);
+    const favoriteCartoons =
+      JSON.parse(localStorage.getItem("favoriteCartoons")) || [];
+    if (isBookmarked) {
+      const updatedFavoriteCartoons = favoriteCartoons.filter(
+        (c) => c.title !== cartoon.title
+      );
+      localStorage.setItem(
+        "favoriteCartoons",
+        JSON.stringify(updatedFavoriteCartoons)
+      );
+    } else {
+      localStorage.setItem(
+        "favoriteCartoons",
+        JSON.stringify([...favoriteCartoons, cartoon])
+      );
+    }
+  };
+
+  const handleFavorite = () => {
+    setIsFavoriteMark(!isFavoriteMark);
+    const likedCartoons =
+      JSON.parse(localStorage.getItem("likedCartoons")) || [];
+    if (isFavoriteMark) {
+      const updatedLikedCartoons = likedCartoons.filter(
+        (c) => c.title !== cartoon.title
+      );
+      localStorage.setItem(
+        "likedCartoons",
+        JSON.stringify(updatedLikedCartoons)
+      );
+    } else {
+      localStorage.setItem(
+        "likedCartoons",
+        JSON.stringify([...likedCartoons, cartoon])
+      );
+    }
+  };
+
+  const handleAddToCart = () => {
+    addProductToCart(cartoon, "cartoons");
+    setIsInCart(true);
+  };
 
   const handleEdit = () => {
     navigate(`/edit/${cartoon.id}`);
+  };
+
+  const openCommentModal = () => {
+    setIsCommentModalOpen(true);
+  };
+
+  const closeCommentModal = () => {
+    setIsCommentModalOpen(false);
+  };
+
+  const openAddCommentModal = () => {
+    setIsAddCommentModalOpen(true);
+  };
+
+  const closeAddCommentModal = () => {
+    setIsAddCommentModalOpen(false);
+  };
+
+  const addComment = async () => {
+    if (newComment.trim() && newComment.length <= 50) {
+      const newComments = [
+        ...comments,
+        { username: user?.username || "Guest", text: newComment },
+      ];
+      setComments(newComments);
+      setNewComment("");
+      localStorage.setItem(
+        `comments-${cartoon.title}`,
+        JSON.stringify(newComments)
+      );
+      closeAddCommentModal();
+
+      try {
+        const response = await axios.post("YOUR_SERVER_ENDPOINT", {
+          cartoonTitle: cartoon.title,
+          username: user?.username || "Guest",
+          comment: newComment,
+        });
+        if (!response.status === 200) {
+          throw new Error("Failed to submit comment");
+        }
+      } catch (error) {
+        console.error("Error submitting comment:", error);
+      }
+    } else {
+      alert("Comment must be between 1 and 50 characters");
+    }
+  };
+
+  const deleteComment = (indexToDelete) => {
+    const updatedComments = comments.filter(
+      (_, index) => index !== indexToDelete
+    );
+    setComments(updatedComments);
+    localStorage.setItem(
+      `comments-${cartoon.title}`,
+      JSON.stringify(updatedComments)
+    );
   };
 
   return (
@@ -292,47 +166,103 @@ const CartoonCard = ({ cartoon, onOpenModal, onDelete }) => {
         />
       </Link>
       <h2 className="cartoon-title">{cartoon.title}</h2>
-      <div className="button-group">
-        {user && user.email === ADMIN ? (
+      <div className="icons">
+        {isFavoriteMark ? (
+          <FavoriteIcon
+            sx={{ color: "#d50000", cursor: "pointer" }}
+            onClick={handleFavorite}
+          />
+        ) : (
+          <FavoriteBorderIcon
+            sx={{ color: "#d50000", cursor: "pointer" }}
+            onClick={handleFavorite}
+          />
+        )}
+        {isBookmarked ? (
+          <BookmarkIcon
+            sx={{ color: "#ffd600", cursor: "pointer" }}
+            onClick={toggleBookmark}
+          />
+        ) : (
+          <BookmarkBorderIcon
+            sx={{ color: "#ffd600", cursor: "pointer" }}
+            onClick={toggleBookmark}
+          />
+        )}
+        <ModeCommentOutlinedIcon
+          sx={{ color: "#2979ff", cursor: "pointer" }}
+          className="comment-icon-modal-main"
+          onClick={openCommentModal}
+        />
+        {user && user.email === ADMIN && (
           <>
-            <Button
-              className="custom-button more-button"
-              onClick={() => onOpenModal(cartoon)}
-              color="primary"
-              variant="contained"
-              size="medium"
-            >
-              MORE
-            </Button>
-            <Button
-              className="custom-button"
-              color="error"
-              variant="contained"
-              size="medium"
+            <DeleteIcon
+              sx={{ color: "#d32f2f", cursor: "pointer" }}
               onClick={() => onDelete(cartoon.id)}
-              startIcon={<DeleteIcon />}
             />
-            <Button
-              className="custom-button"
+            <EditIcon
+              sx={{ color: "#1976d2", cursor: "pointer" }}
               onClick={handleEdit}
-              color="primary"
-              variant="contained"
-              size="medium"
-              startIcon={<EditIcon />}
             />
           </>
-        ) : (
-          <Button
-            className="custom-button more-button"
-            onClick={() => onOpenModal(cartoon)}
-            color="primary"
-            variant="contained"
-            size="medium"
-          >
-            MORE
-          </Button>
         )}
       </div>
+      <button
+        className="buy-button"
+        onClick={handleAddToCart}
+        disabled={isInCart}
+      >
+        {isInCart ? "In Cart" : "Buy Now"}
+      </button>
+
+      {isCommentModalOpen && (
+        <div className="comment-modal">
+          <div className="comment-modal-content">
+            <span className="close-button" onClick={closeCommentModal}>
+              ×
+            </span>
+            <h3>Comments</h3>
+            <button
+              className="add-comment-button"
+              onClick={openAddCommentModal}
+            >
+              Add Comment
+            </button>
+            <div className="comments-list">
+              {comments.map((comment, index) => (
+                <div key={index} className="comment-item">
+                  <strong>{comment.username}:</strong> {comment.text}
+                  <DeleteIcon
+                    className="delete-icon"
+                    onClick={() => deleteComment(index)}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isAddCommentModalOpen && (
+        <div className="add-comment-modal">
+          <div className="add-comment-modal-content">
+            <span className="close-button" onClick={closeAddCommentModal}>
+              ×
+            </span>
+            <h3>Add a Comment</h3>
+            <div className="comment-form">
+              <textarea
+                value={newComment}
+                onChange={(e) => setNewComment(e.target.value)}
+                placeholder="Add your comment here"
+                maxLength="50"
+              />
+              <div className="comment-counter">{newComment.length}/50</div>
+              <button onClick={addComment}>Submit</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

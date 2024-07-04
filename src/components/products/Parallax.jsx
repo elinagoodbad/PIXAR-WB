@@ -5,8 +5,8 @@ const Parallax = () => {
   return (
     <Box
       sx={{
-        width: "100%", // Устанавливаем ширину на 100%
-        height: "100vh", // Высота на весь экран
+        width: "100%",
+        height: "100vh",
         backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1686849530151-BJL3AO4DHGRAZ6B7QX8T/d080_203e.pub16.272.jpg?format=2500w)`,
         backgroundAttachment: "fixed",
         backgroundPosition: "center",
